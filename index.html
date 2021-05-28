@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/@default.css">
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <script src="/js/swiper.min.js"></script>
+    <script src="/js/common.js"></script>
+    <title>창대피엔비</title>
+</head>
+<body>
+    <div id="wrap">
+        <!-- START // HEADER -------------------------------------------------------------------------------- START ---------------------------------------------------------------------------------->
+        <header>
+            <div class="btn-skip">
+                <a class="sr-only--inline" href="#container">메뉴 건너뛰기</a>
+            </div>
+            <div class="bg-drop"></div>
+            <div class="header-inner clearfix">
+                <div class="header-logo">
+                    <h1>
+                        <a href="/" class="logo"><img src="/images/ico_logo_header.png" alt="창원 로고"/></a>
+                    </h1>
+                </div>
+                <nav class="header-menu">
+                    <div class="gnb--dimmed"></div>
+                    <a href="javascript:;" class="gnb-close"></a>
+                    <ul id="gnb">
+                        <li class="gnb-list sub_01">
+                            <a class="gnb-list-link" href="javascript:;">회사소개</a>
+                            <div class="gnb-drop-wrap">
+                                <ul class="gnb-drop-list">
+                                    <li class="sub_01_01">
+                                        <a href="page/sub_01_01.html">회사개요</a>
+                                    </li>
+                                    <li class="sub_01_02">
+                                        <a href="page/sub_01_02.html">CEO인사말</a>
+                                    </li>
+                                    <li class="sub_01_03">
+                                        <a href="page/sub_01_03.html">경영이념</a>
+                                    </li>
+                                    <li class="sub_01_04">
+                                        <a href="page/sub_01_04.html">회사연혁</a>
+                                    </li>
+                                    <li class="sub_01_05">
+                                        <a href="page/sub_01_05.html">CI소개</a>
+                                    </li>
+                                    <li class="sub_01_06">
+                                        <a href="page/sub_01_06.html">인재채용</a>
+                                    </li>
+                                    <li class="sub_01_07">
+                                        <a href="page/sub_01_07.html">찾아오시는 길</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnb-list sub_02">
+                            <a class="gnb-list-link" href="javascript:;">사업영역</a>
+                            <div class="gnb-drop-wrap">
+                                <ul class="gnb-drop-list">
+                                    <li class="sub_02_01">
+                                        <a href="page/sub_02_01.html">어획/구매</a>
+                                    </li>
+                                    <li class="sub_02_02">
+                                        <a href="page/sub_02_02.html">수산물 가공</a>
+                                    </li>
+                                    <li class="sub_02_03">
+                                        <a href="page/sub_02_03.html">수산물 유통</a>
+                                    </li>
+                                    <li class="sub_02_04">
+                                        <a href="page/sub_02_04.html">온라인 쇼핑몰</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnb-list sub_03">
+                            <a class="gnb-list-link" href="javascript:;">제품소개</a>
+                            <div class="gnb-drop-wrap">
+                                <ul class="gnb-drop-list">
+                                    <li class="sub_03_01">
+                                        <a href="page/sub_03_01.html">상온제품</a>
+                                    </li>
+                                    <li class="sub_03_02">
+                                        <a href="page/sub_03_02.html">냉장제품</a>
+                                    </li>
+                                    <li class="sub_03_03">
+                                        <a href="page/sub_03_03.html">냉동제품</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnb-list sub_04">
+                            <a class="gnb-list-link" href="javascript:;">브랜드소개</a>
+                            <div class="gnb-drop-wrap">
+                                <ul class="gnb-drop-list">
+                                    <li class="sub_04_01">
+                                        <a href="page/sub_04_01.html">해물식탁</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnb-list sub_05">
+                            <a class="gnb-list-link" href="javascript:;">홍보센터</a>
+                            <div class="gnb-drop-wrap">
+                                <ul class="gnb-drop-list">
+                                    <li class="sub_05_01">
+                                        <a href="page/sub_05_01.html">홍보자료</a>
+                                    </li>
+                                    <li class="sub_05_02">
+                                        <a href="page/sub_05_02.html">홍보갤러리</a>
+                                    </li>
+                                    <li class="sub_05_03">
+                                        <a href="page/sub_05_03.html">동영상갤러리</a>
+                                    </li>
+                                    <li class="sub_05_04">
+                                        <a href="page/sub_05_04.html">뉴스/언론</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnb-list sub_06">
+                            <a class="gnb-list-link" href="javascript:;">고객센터</a>
+                            <div class="gnb-drop-wrap">
+                                <ul class="gnb-drop-list">
+                                    <li class="sub_06_01">
+                                        <a href="page/sub_06_01.html">공지사항</a>
+                                    </li>
+                                    <li class="sub_06_02">
+                                        <a href="page/sub_06_02.html">상담안내</a>
+                                    </li>
+                                    <li class="sub_06_03">
+                                        <a href="page/sub_06_03.html">1:1온라인문의</a>
+                                    </li>
+                                    <li class="sub_06_04">
+                                        <a href="page/sub_06_04.html">자주찾는질문</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="gnb-list sub_07">
+                            <a class="gnb-list-link color--blue" href="http://www.hamulsiktak.com/" target="_blank">쇼핑몰</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-util">
+                    <a href="javascript:;" class="btn-sitemap"><span class="sr-only--inline">전체메뉴보기</span></a>
+                </div>
+            </div>
+        </header>
+        <!-- END // HEADER --------------------------------------------------------------------------------  END  ---------------------------------------------------------------------------------->
+
+
+        <!-- START // CONTAINER -------------------------------------------------------------------------------- START ---------------------------------------------------------------------------------->
+        <div id="container" class="container-main">
+
+
+            <!-- START // MAIN BANNER -------------------------------------------------------------------------------- START -------------------------------------------------------------------------------->
+            <section class="main-banner swiper-container">
+                <ul class="swiper-wrapper" aria-hidden="true">
+                    <!-- SLIDER : 01 -->
+                    <li class="swiper-slide">
+                        <div class="main-banner--dimmed"></div>
+                        <div class="main-banner-img">
+                            <img src="/images/banner_main_01.png" alt="메인배너이미지"/>
+                        </div>
+                        <div class="main-banner--overlay">
+                            <p class="main-banner-tit">최상의 수산물 확보</br> & 최적의 가공공정</p>
+                            <p class="main-banner-txt">고객의 행복한 식탁을 위한 창대피엔비의 노력은 계속됩니다.</p>
+                        </div>
+                    </li>
+
+                    <!-- SLIDER : 02 -->
+                    <li class="swiper-slide">
+                        <div class="main-banner--dimmed"></div>
+                        <div class="main-banner-img">
+                            <img src="/images/banner_main_01.png" alt="메인배너이미지"/>
+                        </div>
+                        <div class="main-banner--overlay">
+                            <p class="main-banner-tit">최상의 수산물 확보</br> & 최적의 가공공정</p>
+                            <p class="main-banner-txt">고객의 행복한 식탁을 위한 창대피엔비의 노력은 계속됩니다.</p>
+                        </div>
+                    </li>
+
+                    <!-- SLIDER : 03 -->
+                    <li class="swiper-slide">
+                        <div class="main-banner--dimmed"></div>
+                        <div class="main-banner-img">
+                            <img src="/images/banner_main_01.png" alt="메인배너이미지"/>
+                        </div>
+                        <div class="main-banner--overlay">
+                            <p class="main-banner-tit">최상의 수산물 확보</br> & 최적의 가공공정</p>
+                            <p class="main-banner-txt">고객의 행복한 식탁을 위한 창대피엔비의 노력은 계속됩니다.</p>
+                        </div>
+                    </li>
+
+                    <!-- SLIDER : 04 -->
+                    <li class="swiper-slide">
+                        <div class="main-banner--dimmed"></div>
+                        <div class="main-banner-img">
+                            <img src="/images/banner_main_01.png" alt="메인배너이미지"/>
+                        </div>
+                        <div class="main-banner--overlay">
+                            <p class="main-banner-tit">최상의 수산물 확보</br> & 최적의 가공공정</p>
+                            <p class="main-banner-txt">고객의 행복한 식탁을 위한 창대피엔비의 노력은 계속됩니다.</p>
+                        </div>
+                    </li>
+
+                    <!-- SLIDER : 05 -->
+                    <li class="swiper-slide">
+                        <div class="main-banner--dimmed"></div>
+                        <div class="main-banner-img">
+                            <img src="/images/banner_main_01.png" alt="메인배너이미지"/>
+                        </div>
+                        <div class="main-banner--overlay">
+                            <p class="main-banner-tit">최상의 수산물 확보</br> & 최적의 가공공정</p>
+                            <p class="main-banner-txt">고객의 행복한 식탁을 위한 창대피엔비의 노력은 계속됩니다.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                
+                <!-- SLIDE CONTROLLER --------------- START ----------------->
+                <div class="controller-wide">
+                    <div class="swiper-controller">
+                        <div class="swiper-prev"><img src="/images/btn_swiper_widePrev.png" alt="배너 prev 버튼"/></div>
+
+                        <!-- BAR --------------- START ----------------->
+                        <div class="swiper-bar">
+                            <div class="bar"></div>
+                        </div>
+                        <!-- BAR ---------------  END  ----------------->
+
+                        <div class="swiper-next"><img src="/images/btn_swiper_wideNext.png" alt="배너 next 버튼"/></div>
+                    </div>
+                </div>
+                <div class="controller-narrow">
+                    <div class="swiper-controller">
+                        <div class="swiper-paging">
+                            <div class="active-slide">1</div>
+                            <div class="total-slide">5</div>
+                        </div>
+                        <div class="swiper-prev"><img src="images/btn_narrow_prev.svg" alt=""/><span class="sr-only--inline">이전 배너이동</span></div>
+                        <div class="swiper-next"><img src="images/btn_narrow_next.svg" alt=""/><span class="sr-only--inline">다음 배너이동</span></div>
+                        <div class="btn-pause pause--off"><img src="images/btn_narrow_pause.svg" alt=""/><span class="sr-only--inline">멈춤/재생</span></div>
+                    </div>
+                </div>
+                <!-- SLIDE CONTROLLER ---------------  END  ----------------->
+
+            </section>
+            <!-- END // MAIN BANNER --------------------------------------------------------------------------------  END  ---------------------------------------------------------------------------------->
+            <section class="content-notice">
+                <div class="content-inner">
+                    <div class="notice-wrap">
+                        <div class="notice-list">
+                            <div class="notice-box type-news">
+                                <span class="notice-cate">NEWS</span>
+                                <a href="">
+                                    <span class="tit">할인중독 쇼핑몰 입점 안내할인중독 쇼핑몰 입점 안내할인중독 쇼핑몰 입점 안내할인중독 쇼핑몰 입점 안내</span>
+                                    <span class="txt">창대피엔비는 3월에 할인중독 쇼핑몰에 입점하기로 하였습니다.창대피엔비는 3월에 할인중독 쇼핑몰에 입점하기로 하였습니다.창대피엔비는 3월에 할인중독 쇼핑몰에 입점하기로 하였습니다.</span>
+                                    <span class="date">2021.3.15</span>
+                                </a>
+                            </div>
+                            <div class="notice-box type-ad">
+                                <span class="notice-cate">홍보자료</span>
+                                <a href="">
+                                    <span class="tit">창대피엔비 생산 제품 안내</span>
+                                    <span class="txt">창대피엔비의 2021년 생산 제품에 대한 카탈로그(pdf)입니다.</span>
+                                    <span class="date">2021.3.15</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="notice-banner">
+                            <a href="">
+                                <img src="/images/banner_notice_01.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content-product">
+                <div class="content-inner">
+                    <ul class="product-list clearfix">
+                        <li class="product-list-box">
+                            <a href=""class="product-list-link">
+                                <img src="/images/product_example_01.png" alt="">
+                                <div class="product--dimmed"></div>
+                                <dl>
+                                    <dt class="product-cate">해물식탁</dt>
+                                    <dd class="product-name">국내산 참조기</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="product-list-box">
+                            <a href=""class="product-list-link">
+                                <img src="/images/product_example_02.png" alt="">
+                                <div class="product--dimmed"></div>
+                                <dl>
+                                    <dt class="product-cate">해물식탁</dt>
+                                    <dd class="product-name">국내산 참조기</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="product-list-box">
+                            <a href=""class="product-list-link">
+                                <img src="/images/product_example_03.png" alt="">
+                                <div class="product--dimmed"></div>
+                                <dl>
+                                    <dt class="product-cate">해물식탁</dt>
+                                    <dd class="product-name">국내산 참조기</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="product-list-box">
+                            <a href=""class="product-list-link">
+                                <img src="/images/product_example_04.png" alt="">
+                                <div class="product--dimmed"></div>
+                                <dl>
+                                    <dt class="product-cate">해물식탁</dt>
+                                    <dd class="product-name">국내산 참조기</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="product-list-box">
+                            <a href=""class="product-list-link">
+                                <img src="/images/product_example_05.png" alt="">
+                                <div class="product--dimmed"></div>
+                                <dl>
+                                    <dt class="product-cate">해물식탁</dt>
+                                    <dd class="product-name">국내산 참조기</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li class="product-list-box">
+                            <a href=""class="product-list-link">
+                                <img src="/images/product_example_06.png" alt="">
+                                <div class="product--dimmed"></div>
+                                <dl>
+                                    <dt class="product-cate">해물식탁</dt>
+                                    <dd class="product-name">국내산 참조기</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="content-value">
+                <div class="content-inner">
+                    <div class="content-value-top">
+                        <h3 class="value-tit">우리는 <strong>'좋은 수산물'</strong>의 기준을 만듭니다.</h3>
+                        <p class="value-txt">
+                            수산물특성상 객관적이고 과학적인 근거를 대입하기 어렵기 때문에 등급제가</br>
+                            반영하기 어렵고 따라서 소비자 입장에서는 더더욱 ‘좋은 수산물’을 선별해 내기가 힘듭니다.</br>
+                            창대피엔비는 ‘좋은 수산물’의 기준으로 소비자에게 가치와 만족을 채우겠습니다.
+                        </p>
+                    </div>
+                    <ul class="value-list">
+                        <li class="value-list-box">
+                            <div class="value-img"></div>
+                            <p class="tit">최상의 수산물 확보</p>
+                            <p class="desc">약 60만 평 바다의 어업권과</br> 여수수협에 지정중매인권 보유</p>
+                        </li>
+                        <li class="value-list-box">
+                            <div class="value-img"></div>
+                            <p class="tit">대규모 자체 공장</p>
+                            <p class="desc">3,000평 이상의 대규모</br> 자체 공장, 냉장/냉동시설 보유</p>
+                        </li>
+                        <li class="value-list-box">
+                            <div class="value-img"></div>
+                            <p class="tit">최적의 가공 공정</p>
+                            <p class="desc">햅썹(HACCP) 인증을 받은</br> 수산물 가공 공장</p>
+                        </li>
+                        <li class="value-list-box">
+                            <div class="value-img"></div>
+                            <p class="tit">철저한 품질관리</p>
+                            <p class="desc">철저한 품질관리를 통한</br> 최상의 수산물 공급 체계 구축</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- END // CONTAINER --------------------------------------------------------------------------------  END  ---------------------------------------------------------------------------------->
+
+
+        <!-- START // FOOTER -------------------------------------------------------------------------------- START ---------------------------------------------------------------------------------->
+        <footer>
+            <div class="footer-inner clearfix">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <a href="/" class="logo"><img src="/images/ico_logo_footer.png" alt="창원 로고"></a>
+                    </div>
+                    <div class="footer-content">
+                        <span class="footer-company">(주)창대P&B</span>
+                        <ul class="footer-info">
+                            <li>
+                                <dl>
+                                    <dt>주소</dt>
+                                    <dd>전라남도 여수시 망양로 482-6</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>대표이사</dt>
+                                    <dd>정금택</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>전화번호</dt>
+                                    <dd>061-651-5890</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>팩스번호</dt>
+                                    <dd>061-651-8577</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <span class="footer-copy">Copyright &copy; CHANG DAE.All rights reserved.</span>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <ul class="footer-familysite">
+                        <li>
+                            <a href=""><img src="/images/ico_familysite_haemulsictac.png" alt="해물식탁아이콘"><span class="sr-only--inline">해물삭탁 바로가가</span></a>
+                        </li>
+                    </ul>
+                    <ul class="footer-media">
+                        <li>
+                            <a href=""><img src="/images/ico_youtube.png" alt="유튜브 아이콘"><span class="sr-only--inline">유튜브</span></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="/images/ico_blog.png" alt="블로그 아이콘"><span class="sr-only--inline">블로그</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- END // FOOTER --------------------------------------------------------------------------------  END  ---------------------------------------------------------------------------------->
+    </div>
+    <script>
+        $(function(){
+            var mySwiper = new Swiper('.main-banner.swiper-container', {
+                loop: true,
+                slidesPerView: 1,
+                pagination: {
+                    el: '.bar',
+                    type: 'progressbar',
+                },
+                autoplay: {
+                    delay: 2000,
+                },
+                navigation: {
+                    nextEl: '.swiper-next',
+                    prevEl: '.swiper-prev',
+                },
+            });
+            mySwiper.on('slideChange', function () {
+                console.log('slider moved');
+                var activeslide = mySwiper.realIndex;
+                var totalslide = mySwiper.slides.length;
+                console.log(activeslide);
+                $(".active-slide").html(activeslide + 1);
+                $(".total-slide").html(totalslide - 2);
+            });
+    
+            $(".btn-pause.pause--off").click(function(){
+                if($(this).hasClass("pause--off")){
+                    mySwiper.autoplay.stop();
+                    $(this).removeClass("pause--off");
+                    $(this).addClass("pause--on");
+                    $(this).children().attr("src","images/btn_narrow_play.svg");
+                }else{
+                    mySwiper.autoplay.start();
+                    $(this).removeClass("pause--on");
+                    $(this).addClass("pause--off");
+                    $(this).children().attr("src","images/btn_narrow_pause.svg");
+                }
+            });
+            $(".swiper-next, .swiper-prev").click(function(){
+                if($(".btn-pause").hasClass("pause--off")){
+                    mySwiper.autoplay.start();
+                }else{
+                    mySwiper.autoplay.stop();
+                }
+            });
+            
+        });
+    </script>
+</body>
+</html>
