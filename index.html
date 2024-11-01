@@ -1,494 +1,335 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/@default.css">
-    <script src="/js/jquery-3.3.1.min.js"></script>
-    <script src="/js/jquery-ui.min.js"></script>
-    <script src="/js/swiper.min.js"></script>
-    <script src="/js/common.js"></script>
-    <title>창대피엔비</title>
+	<meta charset="utf-8">
+	<title>TEA THE MOON</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/common.css" type="text/css">
+	<link rel="stylesheet" href="css/index.css" type="text/css">
+	<!-- [if lt IE 9]
+		<script src="js/html5shiv.js"></script>	
+	<![endif] -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/index.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		
+		
+	});
+	</script>
 </head>
+	
 <body>
-    <div id="wrap">
-        <!-- START // HEADER -------------------------------------------------------------------------------- START ---------------------------------------------------------------------------------->
-        <header>
-            <div class="btn-skip">
-                <a class="sr-only--inline" href="#container">메뉴 건너뛰기</a>
-            </div>
-            <div class="bg-drop"></div>
-            <div class="header-inner clearfix">
-                <div class="header-logo">
-                    <h1>
-                        <a href="/" class="logo"><img src="/images/ico_logo_header.png" alt="창원 로고"/></a>
-                    </h1>
-                </div>
-                <nav class="header-menu">
-                    <div class="gnb--dimmed"></div>
-                    <a href="javascript:;" class="gnb-close"></a>
-                    <ul id="gnb">
-                        <li class="gnb-list sub_01">
-                            <a class="gnb-list-link" href="javascript:;">회사소개</a>
-                            <div class="gnb-drop-wrap">
-                                <ul class="gnb-drop-list">
-                                    <li class="sub_01_01">
-                                        <a href="page/sub_01_01.html">회사개요</a>
-                                    </li>
-                                    <li class="sub_01_02">
-                                        <a href="page/sub_01_02.html">CEO인사말</a>
-                                    </li>
-                                    <li class="sub_01_03">
-                                        <a href="page/sub_01_03.html">경영이념</a>
-                                    </li>
-                                    <li class="sub_01_04">
-                                        <a href="page/sub_01_04.html">회사연혁</a>
-                                    </li>
-                                    <li class="sub_01_05">
-                                        <a href="page/sub_01_05.html">CI소개</a>
-                                    </li>
-                                    <li class="sub_01_06">
-                                        <a href="page/sub_01_06.html">인재채용</a>
-                                    </li>
-                                    <li class="sub_01_07">
-                                        <a href="page/sub_01_07.html">찾아오시는 길</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="gnb-list sub_02">
-                            <a class="gnb-list-link" href="javascript:;">사업영역</a>
-                            <div class="gnb-drop-wrap">
-                                <ul class="gnb-drop-list">
-                                    <li class="sub_02_01">
-                                        <a href="page/sub_02_01.html">어획/구매</a>
-                                    </li>
-                                    <li class="sub_02_02">
-                                        <a href="page/sub_02_02.html">수산물 가공</a>
-                                    </li>
-                                    <li class="sub_02_03">
-                                        <a href="page/sub_02_03.html">수산물 유통</a>
-                                    </li>
-                                    <li class="sub_02_04">
-                                        <a href="page/sub_02_04.html">온라인 쇼핑몰</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="gnb-list sub_03">
-                            <a class="gnb-list-link" href="javascript:;">제품소개</a>
-                            <div class="gnb-drop-wrap">
-                                <ul class="gnb-drop-list">
-                                    <li class="sub_03_01">
-                                        <a href="page/sub_03_01.html">상온제품</a>
-                                    </li>
-                                    <li class="sub_03_02">
-                                        <a href="page/sub_03_02.html">냉장제품</a>
-                                    </li>
-                                    <li class="sub_03_03">
-                                        <a href="page/sub_03_03.html">냉동제품</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="gnb-list sub_04">
-                            <a class="gnb-list-link" href="javascript:;">브랜드소개</a>
-                            <div class="gnb-drop-wrap">
-                                <ul class="gnb-drop-list">
-                                    <li class="sub_04_01">
-                                        <a href="page/sub_04_01.html">해물식탁</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="gnb-list sub_05">
-                            <a class="gnb-list-link" href="javascript:;">홍보센터</a>
-                            <div class="gnb-drop-wrap">
-                                <ul class="gnb-drop-list">
-                                    <li class="sub_05_01">
-                                        <a href="page/sub_05_01.html">홍보자료</a>
-                                    </li>
-                                    <li class="sub_05_02">
-                                        <a href="page/sub_05_02.html">홍보갤러리</a>
-                                    </li>
-                                    <li class="sub_05_03">
-                                        <a href="page/sub_05_03.html">동영상갤러리</a>
-                                    </li>
-                                    <li class="sub_05_04">
-                                        <a href="page/sub_05_04.html">뉴스/언론</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="gnb-list sub_06">
-                            <a class="gnb-list-link" href="javascript:;">고객센터</a>
-                            <div class="gnb-drop-wrap">
-                                <ul class="gnb-drop-list">
-                                    <li class="sub_06_01">
-                                        <a href="page/sub_06_01.html">공지사항</a>
-                                    </li>
-                                    <li class="sub_06_02">
-                                        <a href="page/sub_06_02.html">상담안내</a>
-                                    </li>
-                                    <li class="sub_06_03">
-                                        <a href="page/sub_06_03.html">1:1온라인문의</a>
-                                    </li>
-                                    <li class="sub_06_04">
-                                        <a href="page/sub_06_04.html">자주찾는질문</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="gnb-list sub_07">
-                            <a class="gnb-list-link color--blue" href="http://www.hamulsiktak.com/" target="_blank">쇼핑몰</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header-util">
-                    <a href="javascript:;" class="btn-sitemap"><span class="sr-only--inline">전체메뉴보기</span></a>
-                </div>
-            </div>
-        </header>
-        <!-- END // HEADER --------------------------------------------------------------------------------  END  ---------------------------------------------------------------------------------->
 
+	<header>
+		<div class="main_bg clearfix">
+			<div class="inner_wrap clearfix">
+				<h1><a href="index.html">TEA THE MOON</a></h1>
+				<div class="nav_bg"></div>
+				<nav>
+					<ul class="clearfix">
+						<li>
+							<a href="#">BRAND</a>
+							<ul>
+								<li><a href="aboutus.html">ABOUT US</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">TEA</a>
+							<ul>
+								<li><a href="herbtea.html">HERB TEA</a></li>
+								<li><a href="fruittea.html">FRUIT TEA</a></li>
+								<li><a href="blacktea.html">BLACK TEA</a></li>
+								<li><a href="greentea.html">GREEN TEA</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">GIFT</a>
+							<ul>
+								<li><a href="teaware.html">TEAWARE</a></li>
+								<li><a href="dessert.html">DESSERT</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">COMMUNITY</a>
+							<ul>
+								<li><a href="contactus.html">CONTACT</a></li>
+								<li><a href="notice.html">NOTICE</a></li>
+								<li><a href="event.html">EVENT</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<button class="btn_menu_toggle">menu</button>
+			</div>
+		</div>
+		<div class="sub_bg"></div>
+	</header>
 
-        <!-- START // CONTAINER -------------------------------------------------------------------------------- START ---------------------------------------------------------------------------------->
-        <div id="container" class="container-main">
+	<section class="sec_visual">
+		<div class="slides cur">
+			<div class="inner_wrap">
+				<div class="info">
+					<p class="title">P  R  E  M  I  U  M</p>
+					<p class="desc">일상 속 품격있는 차 한 잔 티더문<br>티더문만의 프리미엄 티를 느껴보세요</p>
+				</div>
+			</div>
+		</div>
+		<div class="slides next">
+			<div class="inner_wrap">
+				<div class="info">
+					<p class="title">N  A  T  U  R  E</p>
+					<p class="desc">자연과 정성을 담은 1%의<br>찻잎으로 가치있는 힐링을 선사합니다</p>
+				</div>
+			</div>
+		</div>
+		<p class="pagination">
+			<button class="active"><span>slide01</span></button><!-- 
+		 --><button><span>slide02</span></button>
+		</p>
+	</section>
 
+	<section class="sec_product">
+		<div class="inner_wrap">
+			<div class="view_mask">
+				<h2>PRODUCT</h2>
+				<ul class="clearfix">
+					<li>
+						<a href="herbtea.html">
+							<img src="images/img_product_herbtea_1jasmine.png" alt="자스민 티 제품정면" />
+							<p class="title">자스민</p>
+							<p class="title_en">Jasmine</p>
+						</a>
+					</li>
+					<li>
+						<a href="herbtea.html">
+							<img src="images/img_product_herbtea_2lavender.png" alt="라벤더 티 제품정면" />
+							<p class="title">라벤더</p>
+							<p class="title_en">Lavender</p>
+						</a>
+					</li>
+					<li>
+						<a href="herbtea.html">
+							<img src="images/img_product_herbtea_3lemon-balm.png" alt="레몬밤 티 제품정면" />
+							<p class="title">레몬밤</p>
+							<p class="title_en">Lemon-balm</p>
+						</a>
+					</li>
+					<li>
+						<a href="herbtea.html">
+							<img src="images/img_product_herbtea_4lemon-myrtle.png" alt="레몬머틀 티 제품정면" />
+							<p class="title">레몬머틀</p>
+							<p class="title_en">Lemon-myrtle</p>
+						</a>
+					</li>
+					<li>
+						<a href="herbtea.html">
+							<img src="images/img_product_herbtea_5honey-bush.png" alt="허니부쉬 티 제품정면" />
+							<p class="title">허니부쉬</p>
+							<p class="title_en">Honey-bush</p>
+						</a>
+					</li>
+					<li>
+						<a href="herbtea.html">
+							<img src="images/img_product_herbtea_6mate.png" alt="마테차 제품정면" />
+							<p class="title">마테차</p>
+							<p class="title_en">Mate</p>
+						</a>
+					</li>
+					<li>
+						<a href="herbtea.html">
+							<img src="images/img_product_herbtea_7peppermint.png" alt="페퍼민트 티 제품정면" />
+							<p class="title">페퍼민트</p>
+							<p class="title_en">Peppermint</p>
+						</a>
+					</li>
+					<li>
+						<a href="herbtea.html">
+							<img src="images/img_product_herbtea_8rose-hip.png" alt="로즈힙 티 제품정면" />
+							<p class="title">로즈힙</p>
+							<p class="title_en">Rose-hip</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<button class="prev">prev</button>
+			<button class="next">next</button>
+		</div>
+	</section>
 
-            <!-- START // MAIN BANNER -------------------------------------------------------------------------------- START -------------------------------------------------------------------------------->
-            <section class="main-banner swiper-container">
-                <ul class="swiper-wrapper" aria-hidden="true">
-                    <!-- SLIDER : 01 -->
-                    <li class="swiper-slide">
-                        <div class="main-banner--dimmed"></div>
-                        <div class="main-banner-img">
-                            <img src="/images/banner_main_01.png" alt="메인배너이미지"/>
-                        </div>
-                        <div class="main-banner--overlay">
-                            <p class="main-banner-tit">최상의 수산물 확보</br> & 최적의 가공공정</p>
-                            <p class="main-banner-txt">고객의 행복한 식탁을 위한 창대피엔비의 노력은 계속됩니다.</p>
-                        </div>
-                    </li>
+	<section class="sec_about">
+		<div class="inner_wrap clearfix">
+			<div class="img_wrap">
+				<img src="images/img_aboutus_pledgelogo.png" alt="티더문 화이트 색상 로고. 하얀색 테두리와 상단에 '일상 속 품격있는 차 한 잔 티더문'이 추가되어있음" />
+			</div>
+			<div class="info_wrap">
+				<div class="info">
+					<p>품격있는 차의 풍미는 신선한 찻잎으로부터 시작됩니다.<br><br>신선한 차를 유통하기 위해 발품을 아끼지 않습니다.<br><br>항상 한 발자국 먼저 나아갑니다.</p>
+					<a class="view arrow" href="aboutus.html">브랜드 스토리 보러가기</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
-                    <!-- SLIDER : 02 -->
-                    <li class="swiper-slide">
-                        <div class="main-banner--dimmed"></div>
-                        <div class="main-banner-img">
-                            <img src="/images/banner_main_01.png" alt="메인배너이미지"/>
-                        </div>
-                        <div class="main-banner--overlay">
-                            <p class="main-banner-tit">최상의 수산물 확보</br> & 최적의 가공공정</p>
-                            <p class="main-banner-txt">고객의 행복한 식탁을 위한 창대피엔비의 노력은 계속됩니다.</p>
-                        </div>
-                    </li>
+	<section class="fl_info sec_teaware">
+		<div class="inner_wrap">
+			<div class="view_mask clearfix">
+				<div class="info">
+					<p class="title_pre">Gift</p>
+					<h2>TEAWARE</h2>
+					<hr>
+					<p class="desc">티더문의 모든 티 웨어는 순수<br>국내산 제품만을 공급합니다</p>
+					<a class="view" href="teaware.html">전체 상품 보기</a>
+				</div>
+				<ul class="clearfix">
+					<li>
+						<div class="circle"><img src="images/img_index_teaware_01.png" alt="백자 양각 여섯 꽃잎 티팟" /></div>
+						<p class="title">백자 양각 여섯 꽃잎 티팟</p>
+						<p class="title_en">White porcelain tea pot</p>
+					</li>
+					<li>
+						<div class="circle"><img src="images/img_index_teaware_02.png" alt="백자 양각 꽃잎 무늬 티컵" /></div>
+						<p class="title">백자 양각 꽃잎 무늬 티컵</p>
+						<p class="title_en">White porcelain tea cup</p>
+					</li>
+					<li>
+						<div class="circle"><img src="images/img_index_teaware_03.png" alt="트래블 텀블러" /></div>
+						<p class="title">트래블 텀블러</p>
+						<p class="title_en">Travel tumbler</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
 
-                    <!-- SLIDER : 03 -->
-                    <li class="swiper-slide">
-                        <div class="main-banner--dimmed"></div>
-                        <div class="main-banner-img">
-                            <img src="/images/banner_main_01.png" alt="메인배너이미지"/>
-                        </div>
-                        <div class="main-banner--overlay">
-                            <p class="main-banner-tit">최상의 수산물 확보</br> & 최적의 가공공정</p>
-                            <p class="main-banner-txt">고객의 행복한 식탁을 위한 창대피엔비의 노력은 계속됩니다.</p>
-                        </div>
-                    </li>
+	<hr class="hr_01">
 
-                    <!-- SLIDER : 04 -->
-                    <li class="swiper-slide">
-                        <div class="main-banner--dimmed"></div>
-                        <div class="main-banner-img">
-                            <img src="/images/banner_main_01.png" alt="메인배너이미지"/>
-                        </div>
-                        <div class="main-banner--overlay">
-                            <p class="main-banner-tit">최상의 수산물 확보</br> & 최적의 가공공정</p>
-                            <p class="main-banner-txt">고객의 행복한 식탁을 위한 창대피엔비의 노력은 계속됩니다.</p>
-                        </div>
-                    </li>
+	<section class="fl_info sec_dessert">
+		<div class="inner_wrap">
+			<div class="view_mask clearfix">
+				<div class="info">
+					<p class="title_pre">Gift</p>
+					<h2>DESSERT</h2>
+					<hr>
+					<p class="desc">티더문은 숙련된 파티쉐들이<br>디저트를 정성껏 구워냅니다</p>
+					<a class="view" href="dessert.html">전체 상품 보기</a>
+				</div>
+				<ul class="clearfix">
+					<li>
+						<div class="circle"><img src="images/img_index_dessert_01.png" alt="초코 듬뿍 라즈베리 쿠키" /></div>
+						<p class="title">초코 듬뿍 라즈베리 쿠키</p>
+						<p class="title_en">Double chocolate chunk raspberry cookie</p>
+					</li>
+					<li>
+						<div class="circle"><img src="images/img_index_dessert_02.png" alt="크림 치즈 망고 케이크" /></div>
+						<p class="title">크림 치즈 망고 케이크</p>
+						<p class="title_en">Cream cheese mango cake</p>
+					</li>
+					<li>
+						<div class="circle"><img src="images/img_index_dessert_03.png" alt="생크림 라임 타르트" /></div>
+						<p class="title">생크림 라임 타르트</p>
+						<p class="title_en">Whipped cream lime tarts</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
 
-                    <!-- SLIDER : 05 -->
-                    <li class="swiper-slide">
-                        <div class="main-banner--dimmed"></div>
-                        <div class="main-banner-img">
-                            <img src="/images/banner_main_01.png" alt="메인배너이미지"/>
-                        </div>
-                        <div class="main-banner--overlay">
-                            <p class="main-banner-tit">최상의 수산물 확보</br> & 최적의 가공공정</p>
-                            <p class="main-banner-txt">고객의 행복한 식탁을 위한 창대피엔비의 노력은 계속됩니다.</p>
-                        </div>
-                    </li>
-                </ul>
+	<section class="sec_commu clearfix">
+		<div class="slides cur">
+			<img src="images/img_index_notice.jpg" alt="하얀 나무 탁자 위에 올려진 꽃차와 연두색 타자기" />
+			<div class="info">
+				<p class="title">NOTICE</p>
+				<p class="desc"><strong>티더문 소식</strong>을 확인해보세요</p>
+				<a class="view arrow" href="notice.html">바로가기</a>
+			</div>
+		</div>
+		<div class="slides next">
+			<img src="images/img_index_contact.jpg" alt="나무테이블 위의 차 한잔과 각종 사무용품" />
+			<div class="info">
+				<p class="title">CONTACT</p>
+				<p class="desc">티더문은 체계적인 시스템과 노하우로<br><strong>성공적인 창업</strong>을 지원합니다</p>
+				<a class="view arrow" href="contactus.html">바로가기</a>
+			</div>
+		</div>
+		<p class="pagination">
+			<button class="active"><span>slide01</span></button><!-- 
+		 --><button><span>slide02</span></button>
+		</p>
+	</section>
 
-                
-                <!-- SLIDE CONTROLLER --------------- START ----------------->
-                <div class="controller-wide">
-                    <div class="swiper-controller">
-                        <div class="swiper-prev"><img src="/images/btn_swiper_widePrev.png" alt="배너 prev 버튼"/></div>
+	<section class="fl_info sec_event">
+		<div class="inner_wrap">
+			<div class="view_mask clearfix">
+				<div class="info">
+					<p class="title_pre">이벤트</p>
+					<h2>EVENT</h2>
+					<hr>
+					<p class="desc">티더문만의 특별한<br> 이벤트를 만나보세요</p>
+				</div>
+				<ul class="clearfix">
+					<li class="slides cur"><a href="event.html"><img src="images/img_index_event_bn_01.png" alt="행복한 연말 프로젝트 이벤트 배너" /></a></li>
+					<li class="slides next"><a href="event.html"><img src="images/img_index_event_bn_02.png" alt="더블 플래너 이벤트 배너" /></a></li>
+					<li class="slides"><a href="event.html"><img src="images/img_index_event_bn_03.png" alt="티더문과 첫 만남 혜택 이벤트 배너" /></a></li>
+					<li class="slides"><a href="event.html"><img src="images/img_index_event_bn_04.png" alt="1월 원데이 클래스 이벤트 배너" /></a></li>
+					<li class="slides"><a href="event.html"><img src="images/img_index_event_bn_05.png" alt="허브 팟 이벤트 배너" /></a></li>
+					<li class="slides"><a href="event.html"><img src="images/img_index_event_bn_06.png" alt="티더문 뉴컬렉션 이벤트 배너" /></a></li>
+					<li class="slides prev"><a href="event.html"><img src="images/img_index_event_bn_07.png" alt="티더문 메거진 이벤트 배너" /></a></li>
+				</ul>
+				<p class="pagination">
+					<button class="active"><span>slide01</span></button><!-- 
+					--><button><span>slide02</span></button><!-- 
+					--><button><span>slide03</span></button><!-- 
+					--><button><span>slide04</span></button><!-- 
+					--><button><span>slide05</span></button><!-- 
+					--><button><span>slide06</span></button><!-- 
+					--><button><span>slide07</span></button>
+				</p>
+	        </div>
+	        <button class="prev">prev</button>
+			<button class="next">next</button>
+		</div>
+	</section>
 
-                        <!-- BAR --------------- START ----------------->
-                        <div class="swiper-bar">
-                            <div class="bar"></div>
-                        </div>
-                        <!-- BAR ---------------  END  ----------------->
+	<footer>
+		<div class="inner_wrap clearfix">
+			<ul class="f_menu">
+				<li><a href="#">회사소개</a></li><!-- 
+			 --><li><a href="#">인재채용</a></li><!-- 
+			 --><li><a href="#">제휴제안</a></li><!-- 
+			 --><li><a href="#">이용약관</a></li><!-- 
+			 --><li><a href="#"><strong>개인정보처리방침</strong></a></li><!-- 
+			 --><li><a href="#">청소년보호정책</a></li><!-- 
+			 --><li><a href="#">고객센터</a></li>
+			</ul>
+			<div class="logo">
+				<img src="images/img_footer_logo.png" alt="TEA THE MOON logo" />
+			</div>
+			<div class="info">
+				<p><strong>TEA THE MOON</strong></p>
+				<p>18, Jeongjo-ro, 788beon-gil, Paldal-gu, Suwon-si, Gyeonggi-do</p>
+				<p>경기도 수원시 팔달구 정조로788번길 18(팔달로 2가)</p>
+				<p>Copyright ⓒ 2019. All rights reserved.</p>
+			</div>
+			<div class="social">
+				<a href="#">instagram</a><!-- 
+			 --><a href="#">facebook</a><!-- 
+			 --><a href="#">kakaotalk</a>
+				<select id="f_site">
+					<option value="" selected="selected">Family Site</option>
+					<option value="http://www.lorem.com">Lorem.com</option>
+					<option value="http://www.lorem.com">Lorem.com</option>
+					<option value="http://www.lorem.com">Lorem.com</option>
+					<option value="http://www.lorem.com">Lorem.com</option>
+				</select>
+			</div>
+		</div>
+	</footer>
 
-                        <div class="swiper-next"><img src="/images/btn_swiper_wideNext.png" alt="배너 next 버튼"/></div>
-                    </div>
-                </div>
-                <div class="controller-narrow">
-                    <div class="swiper-controller">
-                        <div class="swiper-paging">
-                            <div class="active-slide">1</div>
-                            <div class="total-slide">5</div>
-                        </div>
-                        <div class="swiper-prev"><img src="images/btn_narrow_prev.svg" alt=""/><span class="sr-only--inline">이전 배너이동</span></div>
-                        <div class="swiper-next"><img src="images/btn_narrow_next.svg" alt=""/><span class="sr-only--inline">다음 배너이동</span></div>
-                        <div class="btn-pause pause--off"><img src="images/btn_narrow_pause.svg" alt=""/><span class="sr-only--inline">멈춤/재생</span></div>
-                    </div>
-                </div>
-                <!-- SLIDE CONTROLLER ---------------  END  ----------------->
-
-            </section>
-            <!-- END // MAIN BANNER --------------------------------------------------------------------------------  END  ---------------------------------------------------------------------------------->
-            <section class="content-notice">
-                <div class="content-inner">
-                    <div class="notice-wrap">
-                        <div class="notice-list">
-                            <div class="notice-box type-news">
-                                <span class="notice-cate">NEWS</span>
-                                <a href="">
-                                    <span class="tit">할인중독 쇼핑몰 입점 안내할인중독 쇼핑몰 입점 안내할인중독 쇼핑몰 입점 안내할인중독 쇼핑몰 입점 안내</span>
-                                    <span class="txt">창대피엔비는 3월에 할인중독 쇼핑몰에 입점하기로 하였습니다.창대피엔비는 3월에 할인중독 쇼핑몰에 입점하기로 하였습니다.창대피엔비는 3월에 할인중독 쇼핑몰에 입점하기로 하였습니다.</span>
-                                    <span class="date">2021.3.15</span>
-                                </a>
-                            </div>
-                            <div class="notice-box type-ad">
-                                <span class="notice-cate">홍보자료</span>
-                                <a href="">
-                                    <span class="tit">창대피엔비 생산 제품 안내</span>
-                                    <span class="txt">창대피엔비의 2021년 생산 제품에 대한 카탈로그(pdf)입니다.</span>
-                                    <span class="date">2021.3.15</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="notice-banner">
-                            <a href="">
-                                <img src="/images/banner_notice_01.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="content-product">
-                <div class="content-inner">
-                    <ul class="product-list clearfix">
-                        <li class="product-list-box">
-                            <a href=""class="product-list-link">
-                                <img src="/images/product_example_01.png" alt="">
-                                <div class="product--dimmed"></div>
-                                <dl>
-                                    <dt class="product-cate">해물식탁</dt>
-                                    <dd class="product-name">국내산 참조기</dd>
-                                </dl>
-                            </a>
-                        </li>
-                        <li class="product-list-box">
-                            <a href=""class="product-list-link">
-                                <img src="/images/product_example_02.png" alt="">
-                                <div class="product--dimmed"></div>
-                                <dl>
-                                    <dt class="product-cate">해물식탁</dt>
-                                    <dd class="product-name">국내산 참조기</dd>
-                                </dl>
-                            </a>
-                        </li>
-                        <li class="product-list-box">
-                            <a href=""class="product-list-link">
-                                <img src="/images/product_example_03.png" alt="">
-                                <div class="product--dimmed"></div>
-                                <dl>
-                                    <dt class="product-cate">해물식탁</dt>
-                                    <dd class="product-name">국내산 참조기</dd>
-                                </dl>
-                            </a>
-                        </li>
-                        <li class="product-list-box">
-                            <a href=""class="product-list-link">
-                                <img src="/images/product_example_04.png" alt="">
-                                <div class="product--dimmed"></div>
-                                <dl>
-                                    <dt class="product-cate">해물식탁</dt>
-                                    <dd class="product-name">국내산 참조기</dd>
-                                </dl>
-                            </a>
-                        </li>
-                        <li class="product-list-box">
-                            <a href=""class="product-list-link">
-                                <img src="/images/product_example_05.png" alt="">
-                                <div class="product--dimmed"></div>
-                                <dl>
-                                    <dt class="product-cate">해물식탁</dt>
-                                    <dd class="product-name">국내산 참조기</dd>
-                                </dl>
-                            </a>
-                        </li>
-                        <li class="product-list-box">
-                            <a href=""class="product-list-link">
-                                <img src="/images/product_example_06.png" alt="">
-                                <div class="product--dimmed"></div>
-                                <dl>
-                                    <dt class="product-cate">해물식탁</dt>
-                                    <dd class="product-name">국내산 참조기</dd>
-                                </dl>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="content-value">
-                <div class="content-inner">
-                    <div class="content-value-top">
-                        <h3 class="value-tit">우리는 <strong>'좋은 수산물'</strong>의 기준을 만듭니다.</h3>
-                        <p class="value-txt">
-                            수산물특성상 객관적이고 과학적인 근거를 대입하기 어렵기 때문에 등급제가</br>
-                            반영하기 어렵고 따라서 소비자 입장에서는 더더욱 ‘좋은 수산물’을 선별해 내기가 힘듭니다.</br>
-                            창대피엔비는 ‘좋은 수산물’의 기준으로 소비자에게 가치와 만족을 채우겠습니다.
-                        </p>
-                    </div>
-                    <ul class="value-list">
-                        <li class="value-list-box">
-                            <div class="value-img"></div>
-                            <p class="tit">최상의 수산물 확보</p>
-                            <p class="desc">약 60만 평 바다의 어업권과</br> 여수수협에 지정중매인권 보유</p>
-                        </li>
-                        <li class="value-list-box">
-                            <div class="value-img"></div>
-                            <p class="tit">대규모 자체 공장</p>
-                            <p class="desc">3,000평 이상의 대규모</br> 자체 공장, 냉장/냉동시설 보유</p>
-                        </li>
-                        <li class="value-list-box">
-                            <div class="value-img"></div>
-                            <p class="tit">최적의 가공 공정</p>
-                            <p class="desc">햅썹(HACCP) 인증을 받은</br> 수산물 가공 공장</p>
-                        </li>
-                        <li class="value-list-box">
-                            <div class="value-img"></div>
-                            <p class="tit">철저한 품질관리</p>
-                            <p class="desc">철저한 품질관리를 통한</br> 최상의 수산물 공급 체계 구축</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <!-- END // CONTAINER --------------------------------------------------------------------------------  END  ---------------------------------------------------------------------------------->
-
-
-        <!-- START // FOOTER -------------------------------------------------------------------------------- START ---------------------------------------------------------------------------------->
-        <footer>
-            <div class="footer-inner clearfix">
-                <div class="footer-left">
-                    <div class="footer-logo">
-                        <a href="/" class="logo"><img src="/images/ico_logo_footer.png" alt="창원 로고"></a>
-                    </div>
-                    <div class="footer-content">
-                        <span class="footer-company">(주)창대P&B</span>
-                        <ul class="footer-info">
-                            <li>
-                                <dl>
-                                    <dt>주소</dt>
-                                    <dd>전라남도 여수시 망양로 482-6</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt>대표이사</dt>
-                                    <dd>정금택</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt>전화번호</dt>
-                                    <dd>061-651-5890</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <dl>
-                                    <dt>팩스번호</dt>
-                                    <dd>061-651-8577</dd>
-                                </dl>
-                            </li>
-                        </ul>
-                        <span class="footer-copy">Copyright &copy; CHANG DAE.All rights reserved.</span>
-                    </div>
-                </div>
-                <div class="footer-right">
-                    <ul class="footer-familysite">
-                        <li>
-                            <a href=""><img src="/images/ico_familysite_haemulsictac.png" alt="해물식탁아이콘"><span class="sr-only--inline">해물삭탁 바로가가</span></a>
-                        </li>
-                    </ul>
-                    <ul class="footer-media">
-                        <li>
-                            <a href=""><img src="/images/ico_youtube.png" alt="유튜브 아이콘"><span class="sr-only--inline">유튜브</span></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="/images/ico_blog.png" alt="블로그 아이콘"><span class="sr-only--inline">블로그</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-        <!-- END // FOOTER --------------------------------------------------------------------------------  END  ---------------------------------------------------------------------------------->
-    </div>
-    <script>
-        $(function(){
-            var mySwiper = new Swiper('.main-banner.swiper-container', {
-                loop: true,
-                slidesPerView: 1,
-                pagination: {
-                    el: '.bar',
-                    type: 'progressbar',
-                },
-                autoplay: {
-                    delay: 2000,
-                },
-                navigation: {
-                    nextEl: '.swiper-next',
-                    prevEl: '.swiper-prev',
-                },
-            });
-            mySwiper.on('slideChange', function () {
-                console.log('slider moved');
-                var activeslide = mySwiper.realIndex;
-                var totalslide = mySwiper.slides.length;
-                console.log(activeslide);
-                $(".active-slide").html(activeslide + 1);
-                $(".total-slide").html(totalslide - 2);
-            });
-    
-            $(".btn-pause.pause--off").click(function(){
-                if($(this).hasClass("pause--off")){
-                    mySwiper.autoplay.stop();
-                    $(this).removeClass("pause--off");
-                    $(this).addClass("pause--on");
-                    $(this).children().attr("src","images/btn_narrow_play.svg");
-                }else{
-                    mySwiper.autoplay.start();
-                    $(this).removeClass("pause--on");
-                    $(this).addClass("pause--off");
-                    $(this).children().attr("src","images/btn_narrow_pause.svg");
-                }
-            });
-            $(".swiper-next, .swiper-prev").click(function(){
-                if($(".btn-pause").hasClass("pause--off")){
-                    mySwiper.autoplay.start();
-                }else{
-                    mySwiper.autoplay.stop();
-                }
-            });
-            
-        });
-    </script>
 </body>
+
 </html>
