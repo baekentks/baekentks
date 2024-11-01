@@ -1,0 +1,315 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*++++++++++++++++ Media Query ++++++++++++++++*/
+/* -- moblie(start) -- */
+@media screen and (max-width: 767px) {
+	
+	section.visual { position: relative; width: 100%; height: 260px; margin: 0px 0 60px 0; background: url("../images/bg_aboutus_visual_M.jpg") no-repeat center center; background-size: cover;}
+	section.visual > div.alignbox { position: absolute; bottom:0; width: 100%; height: 200px;  }
+	section.visual > div.alignbox > h2 { line-height: 200px; font-size: 1.625em; font-weight: bold; color: #000; }
+
+	section.pledge { width: 100%; height: auto; background: url("../images/bg_aboutus_pledge_M.jpg") no-repeat center center; background-size: cover; }
+	section.pledge > div.inner_wrap { padding: 0 10px; height: 100%; }
+	section.pledge > div.inner_wrap > div.logo { width: 100%; height: auto; padding-top: 60px; text-align: center;}
+	section.pledge > div.inner_wrap > div.logo > img { display: inline-block; width: 93.75%; height: auto; }
+	section.pledge > div.inner_wrap > div.text_wrap { width: 100%; height: 100%; padding: 40px 0 60px 0; }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox {  width: 100%; font-size: 0.8125em; color: #fff; line-height: 1.6; }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox > div.cond_box { margin-top: 10px; width: 100%; }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox > div.cond_box > div.condition { float: left; width: 50%; text-align: center; }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox > div.cond_box > div.condition > img { width: 62.5%; height: auto; margin-bottom: 10px; }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox > div.cond_box > div.condition > p { width: 100%; margin-bottom: 5px; }
+
+	section.ceoword { width: 100%; height: 338px; background: url("../images/bg_aboutus_ceoword.jpg") no-repeat right bottom; background-size: 80%; }
+	section.ceoword > div.inner_wrap { position: relative; height: 100%; }
+	section.ceoword > div.inner_wrap > div.textbox { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext { font-size: 1.125em; line-height: 1; margin-bottom: 10px; }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext:first-child { margin: 0 0 10px -13px; }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext > span { display: inline-block; font-size: 1.2em; font-weight: bold; color: #234000; } 
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext:nth-child(2) > span { animation-name: jump; animation-duration: 4s; animation-iteration-count: infinite; }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext:nth-child(4) > span { animation-name: jump2; animation-duration: 4s; animation-iteration-count: infinite; }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceo > span:first-child { font-size: 0.875em; }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceo > span:last-child { display: inline-block; margin: 50px 0 0 5px; font-size: 1.25em; }
+
+	section.values { width: 100%; height: 1027px; background: url("../images/bg_aboutus_values.jpg") no-repeat center center; background-size: cover; }
+	section.values > div.inner_wrap { padding: 0 10px; height: 100%; }
+	section.values > div.inner_wrap > h2 { width: 100%; padding: 60px 0 30px 0; line-height: 1; color: #fff;}
+	section.values > div.inner_wrap > div.value_wrap { width: 100%; height: auto; padding: 0 12.5%;}
+	section.values > div.inner_wrap > div.value_wrap > div.value {text-align: center; margin-bottom: 30px; }
+	section.values > div.inner_wrap > div.value_wrap > div.value > div.mask { display: inline-block; width: 180px; height: 180px; margin-bottom: 10px; border-radius: 50%; background: url("../images/img_aboutus_values.png") no-repeat; background-size: cover; font-size: 1px; text-indent: -99999em; }
+	section.values > div.inner_wrap > div.value_wrap > div.value:nth-child(1) > div.mask { background-position: 0 0;}
+	section.values > div.inner_wrap > div.value_wrap > div.value:nth-child(2) > div.mask { background-position: -180px 0;}
+	section.values > div.inner_wrap > div.value_wrap > div.value:nth-child(3) > div.mask { background-position: -360px 0;}
+	section.values > div.inner_wrap > div.value_wrap > div.value > p.title { margin-bottom: 10px; font-size: 1em; color: #fff; text-align: center; }
+	section.values > div.inner_wrap > div.value_wrap > div.value > p.desc { padding: 0 0px; font-size: 0.8175em; color: #fff; text-align: center; }
+
+	section.bidesc { width: 100%; height: 884px; margin-bottom: 60px; }
+	section.bidesc > div.top { width: 100%; height: 50%; }
+	section.bidesc > div.top > div.inner_wrap { height: 100%; padding: 0 10px; }
+	section.bidesc > div.top > div.inner_wrap > h2 { width: 100%; height: 27.6595%; line-height: 1; padding-top: 60px;}
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap { position: relative; height: 72.3404%; }
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.textbox { position: absolute; top: 160px; width: 100%; text-align: center;}
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.textbox > p {font-size: 0.875em; color: #234000; line-height: 1.5; }
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.colorbox { position: absolute; top: 0px; width: 100%; }
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.colorbox > div.alignbox { width: 100%; text-align: center; }
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.colorbox > div.alignbox > div.maincolor { display: inline-block; width: 60%; height: 114px; background: #234000; font-size: 1px; text-indent: -99999em;}
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.colorbox > div.alignbox > p { display: inline-block; width: 60%; font-size: 0.875em; font-family: "NotoSansKR-Medium"; text-align: left; }
+	section.bidesc > div.bottom { width: 100%; height: 50%; background: url("../images/bg_aboutus_BIdescription_M.jpg") no-repeat; background-size: cover; }
+	section.bidesc > div.bottom > div.inner_wrap { height: 100%; }
+	section.bidesc > div.bottom > div.inner_wrap > div.logo { position: relative; width: 100%; padding: 45px 0 50px 0; text-align: center; }
+	section.bidesc > div.bottom > div.inner_wrap > div.logo > img { width: 56.25%; height: auto; }
+	section.bidesc > div.bottom > div.inner_wrap > div.textbox { width: 100%; height: 100%; text-align: center; }	
+	section.bidesc > div.bottom > div.inner_wrap > div.textbox > p { font-size: 0.875em; color: #eee; line-height: 1.6667;}
+
+
+
+
+
+		@keyframes fadein 
+	{ 
+		0%
+		{opacity: 0; transform: translate(-10%, -50%); animation-timing-function: ease-in;}
+		100%
+		{opacity: 1; transform: translate(0%, -50%); animation-timing-function: ease-out;}
+	}
+
+			@keyframes jump 
+	{ 
+		0%
+		{transform: translateY(0%); animation-timing-function: ease-in;}
+		10%
+		{transform: translateY(-7%); animation-timing-function: ease-out;}
+		20%
+		{transform: translateY(0%); animation-timing-function: ease-in;}
+	}
+			@keyframes jump2 
+	{ 
+		0%
+		{transform: translateY(0%); animation-timing-function: ease-in;}
+		60%
+		{transform: translateY(0%); animation-timing-function: ease-in;}
+		70%
+		{transform: translateY(-7%); animation-timing-function: ease-out;}
+		80%
+		{transform: translateY(0%); animation-timing-function: ease-in;}
+	}
+
+} 
+/* -- moblie(end) -- */
+
+/*+++++++++++++++++++++++++*/
+/* -- tablet(start) --*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	br.m_br { display: none; }
+	
+	section.visual { position: relative; width: 100%; height: 280px; margin: 0px 0 70px 0; background: url("../images/bg_aboutus_visual_T.jpg") no-repeat center center; background-size: cover;}
+	section.visual > div.alignbox { position: absolute; bottom:0; width: 100%; height: 200px;  }
+	section.visual > div.alignbox > h2 { line-height: 200px; font-size: 2.5em; font-weight: bold; color: #000; }
+
+	section.pledge { width: 100%; height: 376px; background: url("../images/bg_aboutus_pledge_T.jpg") no-repeat center center; background-size: cover;}
+	section.pledge > div.inner_wrap { height: 100%; }
+	section.pledge > div.inner_wrap > div.logo { position: relative; float: left; width: 42.3177%; height: 100%; opacity: 0; transform: translate(-50px, 0); transition: all 1s; }
+	section.pledge > div.inner_wrap > div.logo.fadein { opacity: 1; transform: translate(0, 0); }
+	section.pledge > div.inner_wrap > div.logo > img { display: block; margin-left: 18.7692%; position: absolute; top: 50%; transform: translateY(-50%); width: 81.2307%; height: auto; }
+	section.pledge > div.inner_wrap > div.text_wrap { position: relative; float: right; width: 51.0416%; height: 100%; opacity: 0; transform: translate(50px, 0); transition: all 1s; }
+	section.pledge > div.inner_wrap > div.text_wrap.fadein { opacity: 1; transform: translate(0, 0); }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox { position: absolute; top: 50%; width: 100%; transform: translateY(-50%); font-size: 0.8125em; color: #fff; line-height: 1.6; }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox > div.cond_box { margin-top: 20px; width: 100%; }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox > div.cond_box > div.condition { float: left; width: 25%; margin-left: -20px; text-align: center; }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox > div.cond_box > div.condition > img { width: 54.1760%; height: auto; margin-bottom: 10px; }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox > div.cond_box > div.condition > p { margin-bottom: 5px; }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox > div.cond_box > div.condition > p > span { display: none;}
+
+	section.ceoword { width: 100%; height: 376px; background: url("../images/bg_aboutus_ceoword.jpg") no-repeat right bottom; background-size: 50%; }
+	section.ceoword > div.inner_wrap { position: relative; height: 100%; }
+	section.ceoword > div.inner_wrap > div.textbox { position: absolute; left: 11.8644%; top: 50%; transform: translateY(-50%); }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext { font-size: 1.625em; line-height: 1; margin-bottom: 15px; }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext:first-child { margin: 0 0 15px -20px; }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext > span { display: inline-block; font-size: 1.1538em; font-weight: bold; color: #234000; } 
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext:nth-child(2) > span { animation-name: jump; animation-duration: 4s; animation-iteration-count: infinite; }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext:nth-child(4) > span { animation-name: jump2; animation-duration: 4s; animation-iteration-count: infinite; }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceo > span:first-child { font-size: 1em; }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceo > span:last-child { display: inline-block; margin: 40px 0 0 5px; font-size: 1.375em; }
+
+	section.values { width: 100%; height: 500px; background: url("../images/bg_aboutus_values.jpg") no-repeat center center; background-size: cover;}
+	section.values > div.inner_wrap { height: 100%; }
+	section.values > div.inner_wrap > h2 { padding: 70px 0 45px 0; line-height: 1; color: #fff;}
+	section.values > div.inner_wrap > div.value_wrap { width: 100%; height: auto; padding: 0 12.5%;}
+	section.values > div.inner_wrap > div.value_wrap > div.value { float: left; width: 33.3333%; text-align: center; }
+	section.values > div.inner_wrap > div.value_wrap > div.value > div.mask { display: inline-block; width: 152px; height: 152px; margin-bottom: 25px; border-radius: 50%; background: url("../images/img_aboutus_values.png") no-repeat; background-size: cover; font-size: 1px; text-indent: -99999em; opacity:0; transform: translateY(30px); transition: all 1s;  }
+	section.values > div.inner_wrap > div.value_wrap > div.value.fadein > div.mask { opacity:1; transform: translateY(0px); }
+	section.values > div.inner_wrap > div.value_wrap > div.value:nth-child(1) > div.mask { background-position: 0 0;}
+	section.values > div.inner_wrap > div.value_wrap > div.value:nth-child(2) > div.mask { background-position: -152px 0;}
+	section.values > div.inner_wrap > div.value_wrap > div.value:nth-child(3) > div.mask { background-position: -304px 0;}
+	section.values > div.inner_wrap > div.value_wrap > div.value > p.title { margin-bottom: 15px; font-size: 1em; color: #fff; text-align: center; }
+	section.values > div.inner_wrap > div.value_wrap > div.value > p.desc { padding: 0 27px; font-size: 0.875em; color: #fff; text-align: center; }
+
+	section.bidesc { width: 100%; height: 631px; margin-bottom: 80px; }
+	section.bidesc > div.top { width: 100%; height: 54.3581%; }
+	section.bidesc > div.top > div.inner_wrap { height: 100%; padding: 0 100px 0 70px; }
+	section.bidesc > div.top > div.inner_wrap > h2 { height: 27.6595%; line-height: 1; padding-top: 70px;}
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap { height: 72.3404%; }
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.textbox { position: relative; float: left; width: 68.0851%; height: 100%; }
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.textbox > p { position: absolute; top: 50%; transform: translateY(-50%); font-size: 0.875em; color: #234000; line-height: 2.14; }
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.colorbox { position: relative; float: right; width: 29.9148%; height: 100%; }
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.colorbox > div.alignbox { position: absolute; top: 50%; transform: translateY(-50%); width: 100%; }
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.colorbox > div.alignbox > div.maincolor { width: 100%; height: 114px; background: #234000; font-size: 1px; text-indent: -99999em;}
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.colorbox > div.alignbox > p { font-size: 0.875em; font-family: "NotoSansKR-Medium"; }
+	section.bidesc > div.bottom { width: 100%; height: 45.6418%; background: url("../images/bg_aboutus_BIdescription_T.jpg") no-repeat; background-size: cover; }
+	section.bidesc > div.bottom > div.inner_wrap { height: 100%; }
+	section.bidesc > div.bottom > div.inner_wrap > div.logo { position: relative; float: left; width: 44.9218%; height: 100%; padding: 70px 50px;  }
+	section.bidesc > div.bottom > div.inner_wrap > div.logo > img { position: absolute; top: 50%; width: 66.3768%; height: auto; transform: translateY(-50%); }
+	section.bidesc > div.bottom > div.inner_wrap > div.textbox { position: relative; float: right; width: 55.0781%; height: 100%; }	
+	section.bidesc > div.bottom > div.inner_wrap > div.textbox > p { position: absolute; top: 50%; transform: translateY(-50%); font-size: 0.875em; color: #eee; line-height: 1.6667;}
+
+
+
+
+
+		@keyframes fadein 
+	{ 
+		0%
+		{opacity: 0; transform: translate(-10%, -50%); animation-timing-function: ease-in;}
+		100%
+		{opacity: 1; transform: translate(0%, -50%); animation-timing-function: ease-out;}
+	}
+
+			@keyframes jump 
+	{ 
+		0%
+		{transform: translateY(0%); animation-timing-function: ease-in;}
+		10%
+		{transform: translateY(-7%); animation-timing-function: ease-out;}
+		20%
+		{transform: translateY(0%); animation-timing-function: ease-in;}
+	}
+			@keyframes jump2 
+	{ 
+		0%
+		{transform: translateY(0%); animation-timing-function: ease-in;}
+		60%
+		{transform: translateY(0%); animation-timing-function: ease-in;}
+		70%
+		{transform: translateY(-7%); animation-timing-function: ease-out;}
+		80%
+		{transform: translateY(0%); animation-timing-function: ease-in;}
+	}
+
+
+
+
+	
+
+} 
+/* -- tablet(end) -- */
+
+/*+++++++++++++++++++++++++*/
+/* -- desktop(start) -- */
+@media screen and (min-width: 1025px) {
+
+	br.m_br { display: none; }
+	
+	section.visual { position: relative; width: 100%; height: 390px; margin: 0px 0 100px 0; background: url("../images/bg_aboutus_visual_D.jpg") no-repeat center center; background-size: cover;}
+	section.visual > div.alignbox { position: absolute; bottom:0; width: 100%; height: 300px;  }
+	section.visual > div.alignbox > h2 { line-height: 300px; font-size: 2.5em; font-weight: bold; color: #000; }
+
+	section.pledge { width: 100%; height: 790px; background: url("../images/bg_aboutus_pledge_D.jpg") no-repeat center center; background-size: cover;}
+	section.pledge > div.inner_wrap { height: 100%; }
+	section.pledge > div.inner_wrap > div { position: relative; float: left; width: 50%; height: 100%; }
+	section.pledge > div.inner_wrap > div.logo { opacity: 0; transform: translate(-50px, 0); transition: all 1s;}
+	section.pledge > div.inner_wrap > div.logo.fadein { opacity: 1; transform: translate(0, 0); }
+	section.pledge > div.inner_wrap > div.logo > img { display: block; margin-left: 80px; position: absolute; top: 50%; transform: translateY(-50%); }
+	section.pledge > div.inner_wrap > div.text_wrap { opacity: 0; transform: translate(50px, 0); transition: all 1s; }
+	section.pledge > div.inner_wrap > div.text_wrap.fadein { opacity: 1; transform: translate(0, 0); }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox { position: absolute; top: 50%; margin-left: 10px; transform: translateY(-50%); font-size: 1.1875em; color: #fff; }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox > div.cond_box { width: 100%; }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox > div.cond_box > div.condition { float: left; width: 50%; text-align: center; }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox > div.cond_box > div.condition > img { margin-bottom: 20px; }
+	section.pledge > div.inner_wrap > div.text_wrap >  div.textbox > div.cond_box > div.condition > p { margin-bottom: 30px; }
+
+	section.ceoword { width: 100%; height: 637px; background: url("../images/bg_aboutus_ceoword.jpg") no-repeat right bottom; background-size: 40%; }
+	section.ceoword > div.inner_wrap { position: relative; height: 100%; }
+	section.ceoword > div.inner_wrap > div.textbox { position: absolute; left: 11.8644%; top: 50%; transform: translateY(-50%); }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext { font-size: 2.5em; line-height: 1; margin-bottom: 25px; opacity:0; transition: all 1.5s; }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext.fadein { opacity: 1;}
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext:first-child { margin: 0 0 25px -36px; }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext > span { display: inline-block; font-size: 1.16667em; font-weight: bold; color: #234000; } 
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext:nth-child(2) > span { animation-name: jump; animation-duration: 4s; animation-iteration-count: infinite; }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceotext:nth-child(4) > span { animation-name: jump2; animation-duration: 4s; animation-iteration-count: infinite; }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceo > span:first-child { font-size: 1.5em; }
+	section.ceoword > div.inner_wrap > div.textbox > p.ceo > span:last-child { display: inline-block; margin: 70px 0 0 5px; font-size: 2.0em; }
+
+	section.values { width: 100%; height: 786px; background: url("../images/bg_aboutus_values.jpg") no-repeat center center; background-size: cover; }
+	section.values > div.inner_wrap { height: 100%; }
+	section.values > div.inner_wrap > h2 { padding: 100px 0 ; line-height: 1; color: #fff;}
+	section.values > div.inner_wrap > div.value_wrap { width: 100%; height: auto; }
+	section.values > div.inner_wrap > div.value_wrap > div.value { float: left; width: 33.3333%; text-align: center; }
+	section.values > div.inner_wrap > div.value_wrap > div.value > div.mask { display: inline-block; width: 300px; height: 300px; margin-bottom: 60px; border-radius: 50%; background: url("../images/img_aboutus_values.png") no-repeat; font-size: 1px; text-indent: -99999em; opacity:0; transform: translateY(30px); transition: all 1s; }
+	section.values > div.inner_wrap > div.value_wrap > div.value.fadein > div.mask { opacity:1; transform: translateY(0px); }
+	section.values > div.inner_wrap > div.value_wrap > div.value:nth-child(1) > div.mask { background-position: 0 0; }
+	section.values > div.inner_wrap > div.value_wrap > div.value:nth-child(2) > div.mask { background-position: -300px 0;}
+	section.values > div.inner_wrap > div.value_wrap > div.value:nth-child(3) > div.mask { background-position: -600px 0;}
+	section.values > div.inner_wrap > div.value_wrap > div.value > p.title { margin-bottom: 10px; font-size: 1.25em; color: #fff; text-align: center; }
+	section.values > div.inner_wrap > div.value_wrap > div.value > p.desc { font-size: 1em; color: #fff; text-align: center; }
+
+	section.bidesc { width: 100%; height: 940px; margin-bottom: 100px; }
+	section.bidesc > div { width: 100%; height: 50%; }
+	section.bidesc > div.top > div.inner_wrap { height: 100%; padding: 0 100px ; }
+	section.bidesc > div.top > div.inner_wrap > h2 { height: 27.6595%; line-height: 1; padding-top: 100px;}
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap { height: 72.3404%; }
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.textbox { position: relative; float: left; width: 68.0851%; height: 100%; }
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.textbox > p { position: absolute; top: 50%; transform: translateY(-50%); font-size: 1.125em; color: #234000; }
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.colorbox { position: relative; float: right; width: 31.9148%; height: 100%; }
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.colorbox > div.alignbox { position: absolute; top: 50%; transform: translateY(-50%); width: 100%; }
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.colorbox > div.alignbox > div.maincolor { width: 100%; height: 170px; background: #234000; font-size: 1px; text-indent: -99999em;}
+	section.bidesc > div.top > div.inner_wrap > div.text_wrap > div.colorbox > div.alignbox > p { font-size: 0.875em; font-family: "NotoSansKR-Medium"; }
+	section.bidesc > div.bottom { background: url("../images/bg_aboutus_BIdescription_D.jpg") no-repeat; background-size: cover; }
+	section.bidesc > div.bottom > div.inner_wrap { height: 100%; padding: 0 40px; }
+	section.bidesc > div.bottom > div.inner_wrap > div.logo { position: relative; float: left; width: 38.1818%; height: 100%; }
+	section.bidesc > div.bottom > div.inner_wrap > div.logo > img { position: absolute; top: 50%; transform: translateY(-50%); }
+	section.bidesc > div.bottom > div.inner_wrap > div.textbox { position: relative; float: right; width: 61.8181%; height: 100%; padding-left: 90px; }	
+	section.bidesc > div.bottom > div.inner_wrap > div.textbox > p { position: absolute; top: 50%; transform: translateY(-50%); font-size: 1.125em; color: #eee; line-height: 1.6667;}
+
+
+
+
+
+		@keyframes fadein 
+	{ 
+		0%
+		{opacity: 0; transform: translate(-10%, -50%); animation-timing-function: ease-in;}
+		100%
+		{opacity: 1; transform: translate(0%, -50%); animation-timing-function: ease-out;}
+	}
+
+			@keyframes jump 
+	{ 
+		0%
+		{transform: translateY(0%); animation-timing-function: ease-in;}
+		10%
+		{transform: translateY(-7%); animation-timing-function: ease-out;}
+		20%
+		{transform: translateY(0%); animation-timing-function: ease-in;}
+	}
+			@keyframes jump2 
+	{ 
+		0%
+		{transform: translateY(0%); animation-timing-function: ease-in;}
+		60%
+		{transform: translateY(0%); animation-timing-function: ease-in;}
+		70%
+		{transform: translateY(-7%); animation-timing-function: ease-out;}
+		80%
+		{transform: translateY(0%); animation-timing-function: ease-in;}
+	}
+
+
+
+
+	
+
+}
+/* -- desktop(end) -- */
+
+

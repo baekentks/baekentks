@@ -1,0 +1,330 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*+++++++++++ Media Query ++++++++++++++*/
+/* -- mobile(start) -- */
+@media screen and (max-width: 767px) {
+
+	section.sec_visual { overflow: hidden; position: relative; width: 100%; height: 360px; }
+	section.sec_visual > div.slides { position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 100%; }
+	section.sec_visual > div.prev { opacity: 1; z-index: 1; transform: translateX(-100%); }
+	section.sec_visual > div.cur { opacity: 1; z-index: 10; }
+	section.sec_visual > div.next { opacity: 1; z-index: 1; transform: translateX(100%); }
+	section.sec_visual > div.slides:nth-of-type(1) { background: url("../images/bg_index_visual_01_m.png") no-repeat center center; background-size: cover; }
+	section.sec_visual > div.slides:nth-of-type(1) > div.inner_wrap > div.info { display: inline-block; position: absolute; top: 25%; width: 100%; text-align: center;  animation-name: fade_in_up; animation-duration: 1.5s; animation-iteration-count: 1; }
+
+	@keyframes fade_in_up {
+		from {
+			transform: translateY(50px); opacity: 0;
+		}
+		to {
+			transform: translateY(0px); opacity: 1;
+		}
+	}
+
+	section.sec_visual > div.slides:nth-of-type(1) > div.inner_wrap > div.info > p.title { display: inline-block; width: 100%; margin-bottom: 20px; font-size: 1.25em; line-height: 1; color: #614f1f; white-space: pre; }
+	section.sec_visual > div.slides:nth-of-type(1) > div.inner_wrap > div.info > p.desc { font-size: 1em; line-height: 1.4; color: #614f1f; }
+	section.sec_visual > div.slides:nth-of-type(2) { background: url("../images/bg_index_visual_02.jpg") no-repeat center center; background-size: cover; }
+	section.sec_visual > div.slides:nth-of-type(2) > div.inner_wrap > div.info { display: inline-block; position: absolute; top: 45%; width: 100%; text-align: center; animation-name: fade_in_up; animation-duration: 1.5s; animation-iteration-count: 1; }
+	section.sec_visual > div.slides:nth-of-type(2) > div.inner_wrap > div.info > p.title { display: inline-block; width: 100%; margin-bottom: 20px; font-size: 1.25em; line-height: 1; color: #fff; white-space: pre; }
+	section.sec_visual > div.slides:nth-of-type(2) > div.inner_wrap > div.info > p.desc { font-size: 1em; line-height: 1.4; color: #fff; }
+	section.sec_visual > div.slides > div.inner_wrap { position: relative; height: 100%; }
+	section.sec_visual > p.pagination { position: absolute; bottom:0; z-index: 20; width: 100%; padding-bottom: 10px; text-align: center; }
+	section.sec_visual > p.pagination > button { display: inline-block; padding: 10px; }
+	section.sec_visual > p.pagination > button > span { display: block; width: 12px; height: 12px; border: 2px solid #fff; border-radius: 50%; font-size: 1px; text-indent: -99999em; }
+	section.sec_visual > p.pagination > button.active > span { background: #fff; }
+
+	section.sec_product { padding: 60px 0; }
+	section.sec_product > div.inner_wrap { position: relative; }
+	section.sec_product > div.inner_wrap > div.view_mask { overflow: hidden; width: 62.5%; margin: 0 auto; }
+	section.sec_product > div.inner_wrap > div.view_mask > h2 { margin-bottom: 50px; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul { width: 1600px; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul > li { float: left; width: 200px; text-align: center; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul > li > a { display: block; width: 100%; height: auto; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul > li > a > img { display: block; width: 100%; margin-bottom: 20px; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul > li > a > p.title { margin-bottom: 10px; padding-right: 10.8474%; font-size: 1em; color: #234000; line-height: 1; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul > li > a > p.title_en { padding-right: 10.8474%; font-size: 0.875em; color: #606d43; line-height: 1; }
+	section.sec_product > div.inner_wrap > button { overflow: hidden; display: block; position: absolute; top: 0; z-index: 50; width: 30px; height: 100%; }
+	section.sec_product > div.inner_wrap > button.prev { left: 0; background: url("../images/btn_prev.png") no-repeat right 55%; text-indent: -99999em; }
+	section.sec_product > div.inner_wrap > button.next { right: 0; background: url("../images/btn_next.png") no-repeat left 55%; text-indent: 99999em; }
+
+	section.sec_about { height: 200px; background: url("../images/bg_aboutus_pledge_D.jpg") no-repeat center center; background-size: cover; }
+	section.sec_about > div.inner_wrap { height: 100%; }
+	section.sec_about > div.inner_wrap > div.img_wrap { display: none; }
+	section.sec_about > div.inner_wrap > div.info_wrap { position: relative; width: 100%; height: 100%; }
+	section.sec_about > div.inner_wrap > div.info_wrap > div.info { position: absolute; top: 50%; width: 100%; transform: translateY(-50%); text-align: center; }
+	section.sec_about > div.inner_wrap > div.info_wrap > div.info > p { width: 100%; margin-bottom: 25px; font-family: "NotoSansKR-Medium"; font-size: 0.8125em; color: #fff; line-height: 1; }
+	section.sec_about > div.inner_wrap > div.info_wrap > div.info > a.view { display: inline-block; padding: 7px; border: 2px solid #fff; font-family: "NotoSansKR-Medium"; font-size: 0.8125em; color: #fff; }
+
+	section.fl_info > div.inner_wrap { padding: 60px 0; }
+	section.fl_info > div.inner_wrap > div.view_mask { overflow: hidden; position: relative; width: 75%; margin: 0 auto; padding-bottom: 60px; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info { width: 100%; text-align: center; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > p.title_pre { margin-bottom: 20px; font-size: 0.875em; color: #606d43;  }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > h2 { margin-bottom: 30px; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > hr { display: none; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > p.desc { display: none; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > a.view { display: block; position: absolute; bottom: 0; left: 50%; width: 146px; height: 34px; font-size: 0.8125em; background: #234000; color: #ebebeb; line-height: 34px; transform: translateX(-50%); }
+	section.fl_info > div.inner_wrap > div.view_mask > ul { width: 720px; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul > li { float: left; width: 240px; padding: 0 20px; text-align: center; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul > li > div.circle { overflow: hidden; width: 100%; height: auto; margin-bottom: 20px; border-radius: 50%; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul > li > div.circle > img { width: 100%; height: 100%; object-fit: cover; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul > li > p.title { margin-bottom: 10px; font-family: "NotoSansKR-Medium"; font-size: 0.9375em; color: #234000; line-height: 1; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul > li > p.title_en { font-size: 0.8125em; color: #606d43; line-height: 1.2; }
+
+	hr.hr_01 { width: 94.7916%; max-width: 1180px; height: 1px; margin: 0 auto; background: #606d43; }
+
+	section.sec_commu { overflow: hidden; position: relative; height: 280px; }
+	section.sec_commu > div.slides { overflow: hidden; position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 100%; }
+	section.sec_commu > div.prev { opacity: 1; z-index: 1; transform: translateX(-100%); }
+	section.sec_commu > div.cur { opacity: 1; z-index: 10; }
+	section.sec_commu > div.next { opacity: 1; z-index: 1; transform: translateX(100%); }
+	section.sec_commu > div.slides > img { width: 100%; height: 100%; object-fit: cover; }
+	section.sec_commu > div.slides > div.info { position: absolute; top: 45%; left: 50%; width: 100%; transform: translate(-50%, -50%); text-align: center; }
+	section.sec_commu > div.slides > div.info > p.title { display: inline-block; margin-bottom: 25px; padding: 5px 0; border-bottom: 3px solid #fff; font-family: "NotoSansKR-Medium"; font-size: 0.875em; color: #fff; }
+	section.sec_commu > div.slides > div.info > p.desc { margin-bottom: 25px; font-size: 1.125em; color: #fff; line-height: 1.4; }
+	section.sec_commu > div.slides > div.info > a.view { display: inline-block; padding: 7px 10px; border: 2px solid #fff; font-family: "NotoSansKR-Medium"; font-size: 0.8125em; color: #fff; }
+	section.sec_commu > p.pagination { position: absolute; bottom:0; z-index: 20; width: 100%; padding-bottom: 10px; text-align: center; }
+	section.sec_commu > p.pagination > button { display: inline-block; padding: 10px; }
+	section.sec_commu > p.pagination > button > span { display: block; width: 12px; height: 12px; border: 2px solid #fff; border-radius: 50%; font-size: 1px; text-indent: -99999em; }
+	section.sec_commu > p.pagination > button.active > span { background: #fff; }
+
+	section.sec_event > div.inner_wrap { position: relative;  }
+	section.sec_event > div.inner_wrap > div.view_mask { position: static; width: 100%; padding: 0; }
+	section.sec_event > div.inner_wrap > div.view_mask > div.info > p.title_pre { display: none; }
+	section.sec_event > div.inner_wrap > div.view_mask > div.info > h2 { margin-bottom: 10px; }
+	section.sec_event > div.inner_wrap > div.view_mask > div.info > hr { display: none; }
+	section.sec_event > div.inner_wrap > div.view_mask > div.info > p.desc { display: block; margin-bottom: 50px; font-size: 0.875em; color: #606d43; }
+	section.sec_event > div.inner_wrap > div.view_mask > div.info > p.desc > br { display: none; }
+	section.sec_event > div.inner_wrap > div.view_mask > ul { overflow: hidden; position: relative; width: 71.875%; height: auto; margin: 0 auto 30px auto; border: 1px solid #eee; }
+	section.sec_event > div.inner_wrap > div.view_mask > ul > li { display: none; position: absolute; z-index: 0; width: 100%; height: auto; padding: 0; opacity: 0; }
+	section.sec_event > div.inner_wrap > div.view_mask > ul > li.prev { display: block; position: absolute; left: 0; top: 0; z-index: 5; opacity: 1; transform: translateX(-100%); }
+	section.sec_event > div.inner_wrap > div.view_mask > ul > li.cur { display: block; position: relative; z-index: 10; opacity: 1; }
+	section.sec_event > div.inner_wrap > div.view_mask > ul > li.next { display: block; position: absolute; left: 0; top: 0; z-index: 5; opacity: 1; transform: translateX(100%); }
+	section.sec_event > div.inner_wrap > div.view_mask > ul > li > a { display: block; width: 100%; height: auto; }
+	section.sec_event > div.inner_wrap > div.view_mask > ul > li > a > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+	section.sec_event > div.inner_wrap > div.view_mask > p.pagination { width: 100%; text-align: center; }
+	section.sec_event > div.inner_wrap > div.view_mask > p.pagination > button { display: inline-block; padding: 10px; }
+	section.sec_event > div.inner_wrap > div.view_mask > p.pagination > button > span { display: block; width: 12px; height: 12px; border: 2px solid #606d43; border-radius: 50%; font-size: 1px; text-indent: -99999em; }
+	section.sec_event > div.inner_wrap > div.view_mask > p.pagination > button.active > span { background: #606d43; }
+	section.sec_event > div.inner_wrap > button { overflow: hidden; display: block; position: absolute; top: 0; z-index: 50; width: 30px; height: 100%; }
+	section.sec_event > div.inner_wrap > button.prev { left: 0; background: url("../images/btn_prev.png") no-repeat right 55%; text-indent: -99999em; }
+	section.sec_event > div.inner_wrap > button.next { right: 0; background: url("../images/btn_next.png") no-repeat left 55%; text-indent: 99999em; }
+
+}
+/* -- mobile(end) -- */
+
+/*+++++++++++++++++++++++++*/
+
+/* -- tablet(start) -- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	section.sec_visual { overflow: hidden; position: relative; width: 100%; height: 430px; }
+	section.sec_visual > div.slides { position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 100%; }
+	section.sec_visual > div.prev { opacity: 1; z-index: 1; transform: translateX(-100%); }
+	section.sec_visual > div.cur { opacity: 1; z-index: 10; }
+	section.sec_visual > div.next { opacity: 1; z-index: 1; transform: translateX(100%); }
+	section.sec_visual > div.slides:nth-of-type(1) { background: url("../images/bg_index_visual_01.jpg") no-repeat; background-size: cover; }
+	section.sec_visual > div.slides:nth-of-type(1) > div.inner_wrap > div.info { display: inline-block; position: absolute; top: 45%; left: 70px;  animation-name: fade_in_up; animation-duration: 1.5s; animation-iteration-count: 1; }
+
+	@keyframes fade_in_up {
+		from {
+			transform: translateY(50px); opacity: 0;
+		}
+		to {
+			transform: translateY(0px); opacity: 1;
+		}
+	}
+
+	section.sec_visual > div.slides:nth-of-type(1) > div.inner_wrap > div.info > p.title { display: inline-block; width: 100%; margin-bottom: 20px; font-size: 1.25em; line-height: 1; color: #614f1f; white-space: pre; }
+	section.sec_visual > div.slides:nth-of-type(1) > div.inner_wrap > div.info > p.desc { font-size: 1em; line-height: 1.5; color: #614f1f; }
+	section.sec_visual > div.slides:nth-of-type(2) { background: url("../images/bg_index_visual_02.jpg") no-repeat center center; background-size: cover; }
+	section.sec_visual > div.slides:nth-of-type(2) > div.inner_wrap > div.info { display: inline-block; position: absolute; top: 60%; right: 60px; text-align: right; animation-name: fade_in_up; animation-duration: 1.5s; animation-iteration-count: 1; }
+	section.sec_visual > div.slides:nth-of-type(2) > div.inner_wrap > div.info > p.title { display: inline-block; width: 100%; margin-bottom: 20px; font-size: 1.25em; line-height: 1; color: #fff; white-space: pre; }
+	section.sec_visual > div.slides:nth-of-type(2) > div.inner_wrap > div.info > p.desc { font-size: 1em; line-height: 1.5; color: #fff; }
+	section.sec_visual > div.slides > div.inner_wrap { position: relative; height: 100%; }
+	section.sec_visual > p.pagination { position: absolute; bottom:0; z-index: 20; width: 100%; padding-bottom: 10px; text-align: center; }
+	section.sec_visual > p.pagination > button { display: inline-block; padding: 10px 12px; }
+	section.sec_visual > p.pagination > button > span { display: block; width: 12px; height: 12px; border: 2px solid #fff; border-radius: 50%; font-size: 1px; text-indent: -99999em; }
+	section.sec_visual > p.pagination > button.active > span { background: #fff; }
+
+	section.sec_product { padding: 70px 0; }
+	section.sec_product > div.inner_wrap { position: relative; }
+	section.sec_product > div.inner_wrap > div.view_mask { overflow: hidden; width: 89.5833%; margin: 0 auto; }
+	section.sec_product > div.inner_wrap > div.view_mask > h2 { margin-bottom: 40px; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul { width: 1834.6666px; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul > li { float: left; width: 229.3333px; text-align: center; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul > li > a { display: block; width: 100%; height: auto; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul > li > a > img { display: block; width: 100%; margin-bottom: 20px; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul > li > a > p.title { margin-bottom: 10px; padding-right: 10.8474%; font-size: 1em; color: #234000; line-height: 1; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul > li > a > p.title_en { padding-right: 10.8474%; font-size: 0.875em; color: #606d43; line-height: 1; }
+	section.sec_product > div.inner_wrap > button { overflow: hidden; display: block; position: absolute; top: 0; z-index: 50; width: 40px; height: 100%; }
+	section.sec_product > div.inner_wrap > button.prev { left: 0; background: url("../images/btn_prev.png") no-repeat right 55%; text-indent: -99999em; }
+	section.sec_product > div.inner_wrap > button.next { right: 0; background: url("../images/btn_next.png") no-repeat left 55%; text-indent: 99999em; }
+
+	section.sec_about { height: 300px; background: url("../images/bg_aboutus_pledge_D.jpg") no-repeat center center; background-size: cover; }
+	section.sec_about > div.inner_wrap { height: 100%; }
+	section.sec_about > div.inner_wrap > div { float: left; position: relative; height: 100%; }
+	section.sec_about > div.inner_wrap > div.img_wrap { width: 39.3229%; }
+	section.sec_about > div.inner_wrap > div.info_wrap { width: 60.6770%; }
+	section.sec_about > div.inner_wrap > div.img_wrap > img { position: absolute; right: 0; top: 50%; width: 76.8211%; transform: translateY(-50%); }
+	section.sec_about > div.inner_wrap > div.info_wrap > div.info { position: absolute; top: 50%; width: 100%; transform: translateY(-50%); text-align: center; }
+	section.sec_about > div.inner_wrap > div.info_wrap > div.info > p { width: 100%; margin-bottom: 25px; font-family: "NotoSansKR-Medium"; font-size: 1em; color: #fff; line-height: 1.4; }
+	section.sec_about > div.inner_wrap > div.info_wrap > div.info > a.view { display: inline-block; padding: 10px 20px; border: 2px solid #fff; font-family: "NotoSansKR-Medium"; font-size: 0.875em; color: #fff; }
+
+	section.fl_info > div.inner_wrap { padding: 70px 0; }
+	section.fl_info > div.inner_wrap > div.view_mask { overflow: hidden; width: 100%; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info { width: 23.7289%; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > p.title_pre { margin-bottom: 25px; font-size: 0.875em; color: #606d43;  }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > h2 { margin-bottom: 25px; font-size: 1.625em; color: #234000; line-height: 1; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > hr { display: inline-block; margin-bottom: 25px; width: 25px; height: 3px; background: #234000; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > p.desc { margin-bottom: 30px; font-size: 0.8125em; color: #234000; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > a.view { display: inline-block; padding: 7px 30px; font-size: 0.8125em; background: #234000; color: #ebebeb; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul { width: 76.2711%; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul > li { float: left; width: 33.3333%; padding: 0 20px; text-align: center; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul > li > div.circle { overflow: hidden; width: 100%; height: auto; margin-bottom: 30px; border-radius: 50%; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul > li > div.circle > img { width: 100%; height: 100%; object-fit: cover; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul > li > p.title { margin-bottom: 10px; font-family: "NotoSansKR-Medium"; font-size: 0.9375em; color: #234000; line-height: 1; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul > li > p.title_en { font-size: 0.8125em; color: #606d43; line-height: 1.2; }
+
+	section.sec_teaware > div.inner_wrap > div.view_mask > div.info { float: left; padding-left: 20px; }
+	section.sec_teaware > div.inner_wrap > div.view_mask > div.info > h2 { text-align: left; }
+	section.sec_teaware > div.inner_wrap > div.view_mask > ul { float: left; }
+	hr.hr_01 { width: 94.7916%; max-width: 1180px; height: 1px; margin: 0 auto; background: #606d43; }
+	section.sec_dessert > div.inner_wrap > div.view_mask > div.info { float: right; padding-right: 20px; text-align: right; }
+	section.sec_dessert > div.inner_wrap > div.view_mask > div.info > h2 { text-align: right; }
+	section.sec_dessert > div.inner_wrap > div.view_mask > ul { float: right; }
+
+	section.sec_commu { overflow: hidden; position: relative; height: 280px; }
+	section.sec_commu > div.slides { overflow: hidden; position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 100%; }
+	section.sec_commu > div.prev { opacity: 1; z-index: 1; transform: translateX(-100%); }
+	section.sec_commu > div.cur { opacity: 1; z-index: 10; }
+	section.sec_commu > div.next { opacity: 1; z-index: 1; transform: translateX(100%); }
+	section.sec_commu > div.slides > img { width: 100%; height: 100%; object-fit: cover; }
+	section.sec_commu > div.slides > div.info { position: absolute; top: 45%; left: 50%; width: 100%; transform: translate(-50%, -50%); text-align: center; }
+	section.sec_commu > div.slides > div.info > p.title { display: inline-block; margin-bottom: 25px; padding: 5px 0; border-bottom: 3px solid #fff; font-family: "NotoSansKR-Medium"; font-size: 1em; color: #fff; }
+	section.sec_commu > div.slides > div.info > p.desc { margin-bottom: 25px; font-size: 1.5em; color: #fff; line-height: 1.4; }
+	section.sec_commu > div.slides > div.info > a.view { display: inline-block; padding: 7px 20px; border: 2px solid #fff; font-family: "NotoSansKR-Medium"; font-size: 0.875em; color: #fff; }
+	section.sec_commu > p.pagination { position: absolute; bottom:0; z-index: 20; width: 100%; padding-bottom: 10px; text-align: center; }
+	section.sec_commu > p.pagination > button { display: inline-block; padding: 10px 12px; }
+	section.sec_commu > p.pagination > button > span { display: block; width: 12px; height: 12px; border: 2px solid #fff; border-radius: 50%; font-size: 1px; text-indent: -99999em; }
+	section.sec_commu > p.pagination > button.active > span { background: #fff; }
+
+	section.sec_event > div.inner_wrap > div.view_mask > div.info { float: none; width: 100%; padding-left: 0; text-align: center; }
+	section.sec_event > div.inner_wrap > div.view_mask > div.info > p.title_pre { display: none; }
+	section.sec_event > div.inner_wrap > div.view_mask > div.info > h2 { margin-bottom: 15px; font-size: 1.625em; text-align: center; }
+	section.sec_event > div.inner_wrap > div.view_mask > div.info > hr { display: none; }
+	section.sec_event > div.inner_wrap > div.view_mask > div.info > p.desc { margin-bottom: 50px; font-size: 1em; }
+	section.sec_event > div.inner_wrap > div.view_mask > div.info > p.desc > br { display: none; }
+	section.sec_event > div.inner_wrap > div.view_mask > ul { width: 100%; }
+	section.sec_event > div.inner_wrap > div.view_mask > ul > li { float: left; width: 33.3333%; padding: 0; text-align: center; }
+	section.sec_event > div.inner_wrap > div.view_mask > ul > li:last-child { display: none; }
+	section.sec_event > div.inner_wrap > div.view_mask > ul > li > a { display: block; position: relative; width: 100%; height: auto; }
+	section.sec_event > div.inner_wrap > div.view_mask > ul > li > a > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+	section.sec_event > div.inner_wrap > div.view_mask > p.pagination { display: none; }
+	section.sec_event > div.inner_wrap > button { display: none; }
+
+}
+/* -- tablet(end) -- */
+
+/*+++++++++++++++++++++++++*/
+
+/* -- desktop(start) -- */
+@media screen and (min-width: 1025px) {
+
+	section.sec_visual { overflow: hidden; position: relative; width: 100%; height: 640px; }
+	section.sec_visual > div.slides { position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 100%; }
+	section.sec_visual > div.prev { opacity: 1; z-index: 1; transform: translateX(-100%); }
+	section.sec_visual > div.cur { opacity: 1; z-index: 10; }
+	section.sec_visual > div.next { opacity: 1; z-index: 1; transform: translateX(100%); }
+	section.sec_visual > div.slides:nth-of-type(1) { background: url("../images/bg_index_visual_01.jpg") no-repeat; background-size: cover; }
+	section.sec_visual > div.slides:nth-of-type(1) > div.inner_wrap > div.info { display: inline-block; position: absolute; top: 45%; left: 30px; animation-name: fade_in_up; animation-duration: 1.5s; animation-iteration-count: 1; }
+
+	@keyframes fade_in_up {
+		from {
+			transform: translateY(50px); opacity: 0;
+		}
+		to {
+			transform: translateY(0px); opacity: 1;
+		}
+	}
+
+	section.sec_visual > div.slides:nth-of-type(1) > div.inner_wrap > div.info > p.title { display: inline-block; width: 100%; margin-bottom: 20px; font-size: 1.875em; line-height: 1; color: #614f1f; white-space: pre; }
+	section.sec_visual > div.slides:nth-of-type(1) > div.inner_wrap > div.info > p.desc { font-size: 1.3125em; line-height: 1.5; color: #614f1f; }
+	section.sec_visual > div.slides:nth-of-type(2) { background: url("../images/bg_index_visual_02.jpg") no-repeat center center; background-size: cover; }
+	section.sec_visual > div.slides:nth-of-type(2) > div.inner_wrap > div.info { display: inline-block; position: absolute; top: 60%; right: 30px; text-align: right; animation-name: fade_in_up; animation-duration: 1.5s; animation-iteration-count: 1; }
+	section.sec_visual > div.slides:nth-of-type(2) > div.inner_wrap > div.info > p.title { display: inline-block; width: 100%; margin-bottom: 20px; font-size: 1.875em; line-height: 1; color: #fff; white-space: pre; }
+	section.sec_visual > div.slides:nth-of-type(2) > div.inner_wrap > div.info > p.desc { font-size: 1.3125em; line-height: 1.5; color: #fff; }
+	section.sec_visual > div.slides > div.inner_wrap { position: relative; height: 100%; }
+	section.sec_visual > p.pagination { position: absolute; bottom:0; z-index: 20; width: 100%; padding-bottom: 10px; text-align: center; }
+	section.sec_visual > p.pagination > button { display: inline-block; padding: 10px 12px; }
+	section.sec_visual > p.pagination > button > span { display: block; width: 12px; height: 12px; border: 2px solid #fff; border-radius: 50%; font-size: 1px; text-indent: -99999em; }
+	section.sec_visual > p.pagination > button.active > span { background: #fff; }
+
+	section.sec_product { padding: 100px 0; }
+	section.sec_product > div.inner_wrap { position: relative; }
+	section.sec_product > div.inner_wrap > div.view_mask { overflow: hidden; width: 1140px; margin: 0 auto; padding-bottom: 15px; }
+	section.sec_product > div.inner_wrap > div.view_mask > h2 { margin-bottom: 70px; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul { width: 1824px; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul > li { float: left; width: 228px; text-align: center; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul > li > a { display: block; width: 100%; height: auto; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul > li > a > img { display: block; width: 100%; margin-bottom: 30px; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul > li > a > p.title { margin-bottom: 10px; padding-right: 10.8474%; font-size: 1.125em; color: #234000; line-height: 1; }
+	section.sec_product > div.inner_wrap > div.view_mask > ul > li > a > p.title_en { padding-right: 10.8474%; font-size: 1em; color: #606d43; line-height: 1; }
+	section.sec_product > div.inner_wrap > button { overflow: hidden; display: block; position: absolute; top: 0; z-index: 50; width: 20px; height: 100%; }
+	section.sec_product > div.inner_wrap > button.prev { left: 0; background: url("../images/btn_prev.png") no-repeat center 55%; text-indent: -99999em; }
+	section.sec_product > div.inner_wrap > button.next { right: 0; background: url("../images/btn_next.png") no-repeat center 55%; text-indent: 99999em; }
+
+	section.sec_about { height: 460px; background: url("../images/bg_aboutus_pledge_D.jpg") no-repeat center center; background-size: cover; }
+	section.sec_about > div.inner_wrap { height: 100%; }
+	section.sec_about > div.inner_wrap > div { float: left; position: relative; width: 50%; height: 100%; }
+	section.sec_about > div.inner_wrap > div.img_wrap > img { position: absolute; right: 60px; top: 50%; transform: translateY(-50%); }
+	section.sec_about > div.inner_wrap > div.info_wrap > div.info { position: absolute; left: 60px; top: 50%; transform: translateY(-50%); }
+	section.sec_about > div.inner_wrap > div.info_wrap > div.info > p { width: 100%; margin-bottom: 40px; font-family: "NotoSansKR-Medium"; font-size: 1.4375em; color: #fff; line-height: 1.7; }
+	section.sec_about > div.inner_wrap > div.info_wrap > div.info > a.view { display: inline-block; padding: 10px 20px; border: 2px solid #fff; font-family: "NotoSansKR-Medium"; color: #fff; }
+
+	section.fl_info > div.inner_wrap { padding: 100px 0; }
+	section.fl_info > div.inner_wrap > div.view_mask { overflow: hidden; width: 100%; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info { width: 23.7289%; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > p.title_pre { margin-bottom: 25px; font-size: 1.125em; color: #606d43;  }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > h2 { margin-bottom: 30px; font-size: 2em; color: #234000; line-height: 1; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > hr { display: inline-block; margin-bottom: 30px; width: 25px; height: 3px; background: #234000; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > p.desc { margin-bottom: 40px; color: #234000; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > a.view { padding: 10px 40px; font-size: 0.9375em; background: #234000; color: #ebebeb; }
+	section.fl_info > div.inner_wrap > div.view_mask > div.info > a.view:hover { padding: 8px 38px; border: 2px solid #234000; background: #fff; color: #234000; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul { width: 76.2711%; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul > li { float: left; width: 33.3333%; padding: 0 30px; text-align: center; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul > li > div.circle { overflow: hidden; width: 100%; height: auto; margin-bottom: 30px; border-radius: 50%; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul > li > div.circle > img { width: 100%; height: 100%; object-fit: cover; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul > li > p.title { margin-bottom: 10px; font-family: "NotoSansKR-Medium"; font-size: 1.125em; color: #234000; line-height: 1; }
+	section.fl_info > div.inner_wrap > div.view_mask > ul > li > p.title_en { color: #606d43; line-height: 1.2; }
+
+	section.sec_teaware > div.inner_wrap > div.view_mask > div.info { float: left; padding-left: 20px; }
+	section.sec_teaware > div.inner_wrap > div.view_mask > div.info > h2 { text-align: left; }
+	section.sec_teaware > div.inner_wrap > div.view_mask > ul { float: left; }
+	hr.hr_01 { width: 100%; max-width: 1180px; height: 1px; margin: 0 auto; background: #606d43; }
+	section.sec_dessert > div.inner_wrap > div.view_mask > div.info { float: right; padding-right: 20px; text-align: right; }
+	section.sec_dessert > div.inner_wrap > div.view_mask > div.info > h2 { text-align: right; }
+	section.sec_dessert > div.inner_wrap > div.view_mask > ul { float: right; }
+
+	section.sec_commu { height: 400px; }
+	section.sec_commu > div.slides { overflow: hidden; float: left; position: relative; width: 50%; height: 100%; }
+	section.sec_commu > div.slides > img { width: 100%; height: 100%; object-fit: cover; }
+	section.sec_commu > div.slides:hover > img { transform: scale(1.05); transition: 0.5s }
+	section.sec_commu > div.slides > div.info { position: absolute; top: 50%; left: 50%; width: 100%; transform: translate(-50%, -50%); text-align: center; }
+	section.sec_commu > div.slides > div.info > p.title { display: inline-block; margin-bottom: 25px; padding: 5px 0; border-bottom: 3px solid #fff; font-family: "NotoSansKR-Medium"; font-size: 1.25em; color: #fff; }
+	section.sec_commu > div.slides > div.info > p.desc { margin-bottom: 30px; font-size: 1.75em; color: #fff; line-height: 1.2; }
+	section.sec_commu > div.slides > div.info > a.view { display: inline-block; padding: 10px 20px; border: 2px solid #fff; font-family: "NotoSansKR-Medium"; font-size: 0.9375em; color: #fff; }
+	section.sec_commu > p.pagination { display: none; }
+
+	section.sec_event > div.inner_wrap > div.view_mask > div.info { float: left; width: 25%; padding-left: 20px; }
+	section.sec_event > div.inner_wrap > div.view_mask > div.info > h2 { text-align: left; }
+	section.sec_event > div.inner_wrap > div.view_mask > ul { width: 100%; }
+	section.sec_event > div.inner_wrap > div.view_mask > ul > li { float: left; width: 25%; padding: 0; text-align: center; }
+	section.sec_event > div.inner_wrap > div.view_mask > ul > li > a { display: block; position: relative; width: 100%; height: auto; }
+	section.sec_event > div.inner_wrap > div.view_mask > ul > li > a > img { display: block; width: 100%; height: 100%; object-fit: cover; }
+	section.sec_event > div.inner_wrap > div.view_mask > ul > li > a:hover::before { content: ""; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(255, 255, 255, 0.4); }
+	section.sec_event > div.inner_wrap > div.view_mask > p.pagination { display: none; }
+	section.sec_event > div.inner_wrap > button { display: none; }
+
+}
+/* -- desktop(end) -- */

@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* +++++++++++++++++++ Media Query +++++++++++++++++++ */
+/* -- mobile(start) -- */
+@media screen and (max-width: 767px) {
+
+	section.sec_visual { overflow: hidden; position: relative; width: 100%; height: 260px; }
+	section.sec_visual > div.img_v { position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 100%; background: url("../images/bg_notice_visual.jpg") no-repeat 85% center; background-size: cover; }
+	section.sec_visual > div.img_v > div.info { display: inline-block; position: absolute; width: 100%; height: 200px; bottom: 0; z-index: 15; text-align: center; }
+	section.sec_visual > div.img_v > div.info > h2 { font-size: 1.625em; font-weight: bold; color: #262626; line-height: 200px; }
+
+	section.notice {overflow:hidden; width:100%; margin:0 auto; }
+	section.notice > div.inner_wrap {padding: 60px 10px;}
+	section.notice > div.inner_wrap > div.news_sch_wrap {  position: relative; width:100%; padding: 10px 10px; height: 50px;  background: #c5d5b2;
+	border-radius: 3px; }
+	section.notice >div.inner_wrap > div.news_sch_wrap > p { position: absolute;  right: 10px; top: 10px;}
+	section.notice >div.inner_wrap > div.news_sch_wrap > p > label.a11y{  position: absolute; overflow: hidden; width: 1px;  height: 1px;  }
+
+	section.notice >div.inner_wrap > div.news_sch_wrap > p > a.btn_01  {float:right; width:60px; height:30px;line-height: 30px; text-align:center; margin:0 20px 0 5px;
+	color:#fff; background:#234000;  }
+	section.notice >div.inner_wrap > div.news_sch_wrap > p > input { width:175px; height:30px; text-indent: 15px; line-height: 30px;}
+
+
+	section.notice > div.inner_wrap > div.inner_wrap > table { table-layout:fixed;  margin-top:30px; width:100%; margin-bottom:30px;  }
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr > th:nth-child(1) {width:20%; } 
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr > th:nth-child(2) {width:80%; }
+	
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td:nth-child(1) {width:20%; } 
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td:nth-child(2) {width:80%; }
+
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr.header {border-top: 2px solid #234000; height:50px;  font-family:"NotoSansKR-Regular";
+	font-size: 1em; border-bottom: 2px solid #234000;   }
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr.header > th { overflow:hidden; white-space:nowrap;padding:20px; font-size: 0.813em; }
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr.header > th.th2 {display:none; }
+
+	  
+
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr {width:100%; font-size:0.813em;  border-bottom: 2px solid #cccccc;}
+
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td {padding:14px; }
+	
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td.unmber {text-align:center;}
+
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td.date {display:none; text-align:center; }
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td.views {display:none;text-align:center; }
+
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td.story { overflow: hidden;  padding: 10px; white-space: nowrap;text-overflow: ellipsis; 
+	text-align: left;}
+
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td.story > a {text-align:left; } 
+
+	section.notice > div.inner_wrap > p.pagenation { text-align: center;  }
+	section.notice > div.inner_wrap > p.pagenation > a { display: inline-block; padding: 8px 0; width: 20px; height: 30px;
+	font-size: 0.875em; color: #000; text-align: center;  line-height: 10px; }
+	section.notice > div.inner_wrap > p.pagenation > span > a {display:none; }
+	section.notice > div.inner_wrap > p > a.first { margin: 0px 5px 0px 0px; border: 1px solid #ccc; }
+	section.notice > div.inner_wrap > p > a.prev { margin: 0px 5px 0px 0px; border: 1px solid #ccc; }
+	section.notice > div.inner_wrap > p > a.next { margin: 0px 0px 0px 5px; border: 1px solid #ccc; }
+	section.notice > div.inner_wrap > p > a.last { margin: 0px 0px 0px 5px; border: 1px solid #ccc; }
+	
+
+	
+	
+}
+/* -- mobile(end) -- */
+
+
+/* ++++++++++++++++++++++++ */
+/* -- tablet(start) -- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	section.sec_visual { overflow: hidden; position: relative; width: 100%; height: 280px; }
+	section.sec_visual > div.img_v { position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 100%; background: url("../images/bg_notice_visual.jpg") no-repeat 70% center; background-size: cover; }
+	section.sec_visual > div.img_v > div.info { display: inline-block; position: absolute; width: 100%; height: 200px; bottom: 0; z-index: 15; text-align: center; }
+	section.sec_visual > div.img_v > div.info > h2 { font-size: 2.5em; font-weight: bold; color: #262626; line-height: 200px; }
+	
+	section.notice { width:100%; margin:0 auto; table-layout:fixed; }
+	section.notice > div.inner_wrap {padding: 70px 20px;}
+	section.notice > div.inner_wrap > div.news_sch_wrap {  position: relative; width:100%; padding: 15px 15px; height: 80px;  background: #c5d5b2;
+	border-radius: 3px; }
+	section.notice >div.inner_wrap > div.news_sch_wrap > p { position: absolute;  right: 15px; top: 15px;}
+	section.notice >div.inner_wrap > div.news_sch_wrap > p > label.a11y{  position: absolute; overflow: hidden; width: 1px;  height: 1px;  }
+
+	section.notice >div.inner_wrap > div.news_sch_wrap > p > a.btn_01  {float:right; width:80px; height:50px;line-height: 50px; text-align:center; color:#fff;
+	 background:#234000;  }
+	section.notice >div.inner_wrap > div.news_sch_wrap > p > input { width:300px; height:50px; text-indent: 15px; line-height: 50px;}
+
+	section.notice > div.inner_wrap > div.inner_wrap > table { margin-top:70px; width:100%; margin-bottom:40px;  }
+
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr > th:nth-child(1) {width:10%; } 
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr > th:nth-child(2) {width:60%; }
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr > th:nth-child(3) {width:20%; } 
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr > th:nth-child(4) {width:10%; }
+	
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td:nth-child(1) {width:10%; } 
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td:nth-child(2) {width:60%; }
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td:nth-child(3) {width:20%; } 
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td:nth-child(4) {width:10%; }
+
+
+
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr {border-top: 3px solid #234000; padding: 15px; font-family:"NotoSansKR-Regular";
+	font-size: 1em; border-bottom: 3px solid #234000;   }
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr > th {padding:16px; }
+
+
+	  
+
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr { border-bottom: 2px solid #cccccc; }
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td {padding:12px;}
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td.unmber {text-align:center; }
+
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td.date { text-align:center; }
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td.views {text-align:center; }
+
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td.story > a {text-align:left;} 
+
+	section.notice > div.inner_wrap > p.pagenation { text-align: center;  }
+	section.notice > div.inner_wrap > p.pagenation > a { display: inline-block; margin-left: 2px; padding: 11px 0; width: 25px; height: 35px;
+	font-size: 0.875em; color: #000; text-align: center;  line-height: 10px; }
+	section.notice > div.inner_wrap > p.pagenation > span > a { display: inline-block; margin-left: 2px; padding: 11px 0; width: 25px; height: 35px;
+	font-size: 0.875em; color: #000; text-align: center;  line-height: 10px; }
+	section.notice > div.inner_wrap > p > a.first { margin: 0px 5px 0px 2px; border: 1px solid #ccc; }
+	section.notice > div.inner_wrap > p > a.prev { margin: 0px 5px 0px 2px; border: 1px solid #ccc; }
+	section.notice > div.inner_wrap > p > a.next { margin: 0px 0px 0px 7px; border: 1px solid #ccc; }
+	section.notice > div.inner_wrap > p > a.last { margin: 0px 0px 0px 7px; border: 1px solid #ccc; }
+
+	
+
+
+}
+/* -- tablet(end) -- */
+
+
+/* +++++++++++++++++++++++++ */
+/* -- desktop(start) -- */
+@media screen and (min-width: 1025px) {
+
+	section.sec_visual { overflow: hidden; position: relative; width: 100%; height: 390px; }
+	section.sec_visual > div.img_v { position: absolute; top: 0; left: 0; z-index: 0; width: 100%; height: 100%; background: url("../images/bg_notice_visual.jpg") no-repeat 70% center; background-size: cover; }
+	section.sec_visual > div.img_v > div.info { display: inline-block; position: absolute; width: 100%; height: 300px; bottom: 0; z-index: 15; text-align: center; }
+	section.sec_visual > div.img_v > div.info > h2 { top: 50%; font-size: 2.5em; font-weight: bold; color: #262626; line-height: 300px; }
+
+
+	section.notice { width:100%; margin:0  auto; table-layout:fixed; }
+	section.notice > div.inner_wrap > div.news_sch_wrap { width:100%; padding: 30px 30px; height: 100px;  background: #c5d5b2;
+	border-radius: 3px; margin-top: 100px;position: relative;}
+	section.notice >div.inner_wrap > div.news_sch_wrap > p { position: absolute;  right: 30px; top: 30px;}
+	section.notice >div.inner_wrap > div.news_sch_wrap > p > label.a11y{ width: 1px;  height: 1px; margin: -1px;overflow: hidden;  position: absolute; }
+
+	section.notice >div.inner_wrap > div.news_sch_wrap > p > a.btn_01  {float:right; width:70px; height:40px;line-height: 38px; text-align:center; color:#fff;
+	 background:#234000;  }
+	section.notice >div.inner_wrap > div.news_sch_wrap > p > input { width:380px; height:40px; text-indent:10px; line-height: 38px;}
+
+	section.notice > div.inner_wrap > div.inner_wrap { width: 100%; }
+	section.notice > div.inner_wrap > div.inner_wrap > table { margin-top:70px; width: 100%; margin-bottom:70px;  }
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr > th:nth-child(1) {width:10%; } 
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr > th:nth-child(2) {width:60%; }
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr > th:nth-child(3) {width:20%; } 
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr > th:nth-child(4) {width:10%; }
+	
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td:nth-child(1) {width:10%; } 
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td:nth-child(2) {width:60%; }
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td:nth-child(3) {width:20%; } 
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td:nth-child(4) {width:10%; }
+
+
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead {border-top: 3px solid #234000;  font-family:"NotoSansKR-Regular";
+	 border-bottom: 3px solid #234000;}
+	section.notice > div.inner_wrap > div.inner_wrap > table > thead > tr > th { padding: 26px; font-size: 1em;}
+	  
+
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr { border-bottom: 2px solid #cccccc; }
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td {padding: 21px; }
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td.unmber {text-align:center; }
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td.date { text-align:center;}
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td.views {text-align:center; }
+
+	section.notice > div.inner_wrap > div.inner_wrap > table > tbody > tr > td.story > a { text-align:left;} 
+
+	section.notice > div.inner_wrap > p.pagenation { text-align: center; margin-bottom:100px; }
+	section.notice > div.inner_wrap > p.pagenation > a { display: inline-block; margin-left: 2px; padding: 11px 0; width: 30px; height: 35px;
+	font-size: 0.875em; color: #000; text-align: center;  line-height: 10px; }
+	section.notice > div.inner_wrap > p.pagenation > span > a { display: inline-block; margin-left: 2px; padding: 11px 0; width: 30px; height: 35px;
+	font-size: 0.875em; color: #000; text-align: center;  line-height: 10px; }
+	section.notice > div.inner_wrap > p > a.first { margin: 0px 5px 0px 2px; border: 1px solid #ccc; }
+	section.notice > div.inner_wrap > p > a.prev { margin: 0px 5px 0px 2px; border: 1px solid #ccc; }
+	section.notice > div.inner_wrap > p > a.next { margin: 0px 0px 0px 7px; border: 1px solid #ccc; }
+	section.notice > div.inner_wrap > p > a.last { margin: 0px 0px 0px 7px; border: 1px solid #ccc; }
+				
+
+}
+/* -- desktop(end) -- */

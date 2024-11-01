@@ -1,0 +1,231 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*+++++++ Media Query ++++++++*/
+/*--mobile(start)--*/
+@media screen and (max-width: 767px) { 
+
+	section.sec_visual { overflow: hidden; position: relative; width: auto; height: 260px; margin-bottom: 60px; background: url("../images/bg_product_visual_M.png") no-repeat center center; background-size: cover;  }
+	section.sec_visual > div.visual_nm { position: absolute; left: 50%; top: 50%; z-index: 1; width: 100%;  opacity: 1; text-align: center; transform: translate(-50%, -40%); }
+	section.sec_visual > div.visual_nm > p { margin: 100px 0; font-size: 1.625em; font-weight: bold;  line-height: 1; color: #330000; }
+	
+	section.sec_product { position: relative; } 
+	section.sec_product > div.inner_wrap > ul { width: 100%; }
+	section.sec_product > div.inner_wrap > ul > li { float: left; width: 50%; }
+	section.sec_product > div.inner_wrap > ul > li > button > img { display: block; width: 100%; height: auto; margin: 0 auto 30px auto; object-fit: cover; background-size: 100%; }
+	section.sec_product > div.inner_wrap > ul > li > button > p.title { margin-bottom: 10px; font-size: 1.25em; font-weight: bold; text-align: center; padding-right: 10.8474%; color: #234000;  }
+	section.sec_product > div.inner_wrap > ul > li > button > p.title_en { margin-bottom: 60px; font-size: 0.875em;  text-align: center; padding-right: 10.8474%; color: #606d43;  } 
+	
+	div.popup_bg { display: none; position: fixed; left: 0; top: 0; z-index: 110; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); }
+	div.popup { display: none; overflow-y: scroll; position: fixed; left: 50%; top: 50%; z-index: 111; width: 76%; height: 100%;  padding: 0; background: #fff; transform: translate(-50%, -50%); }
+	div.popup_bg.on { display: block;}
+	div.popup.on { display: block;}
+	div.popup_bg > button { float: right; padding: 15px 6px 0 0; }
+	div.popup_bg > button > img { width: 25px; height: 25px; }
+	div.popup > p { text-align: center; } 
+	div.popup > p.title { margin: 50px auto 25px; font-size: 1.625em; font-weight: bold; color: #111; text-transform: uppercase; }
+	div.popup > p.title_sb { font-weight: bold; margin-bottom: 15px; color: #111; }
+	div.popup > p.title_ls { margin-bottom: 40px; padding: 0 20px; word-break: keep-all; font-size: 0.875em; line-height: 1.7; color: #535353; }
+	div.popup > img { display: block; width: 170px; height: 208px; margin: 0 auto; margin-bottom: 40px; }
+
+
+	
+	/*howto*/
+	 div.popup > div.info_how { overflow: hidden; max-width: 1280px; margin-top: 50px; margin-bottom: 65px; }
+	div.popup > div.info_how > p { overflow: hidden; float: left; width: 47.5%; padding-left: 12%; margin-top: 50px; color: #000000; font-size: 0.875em; font-weight: 700; line-height: 37px;}
+	/*20191122 box-sizing 수정*/
+	div.popup > div.info_how > p {box-sizing:content-box;}
+	div.popup > div.info_how > ul {overflow: hidden; float: left; width: 148%; }
+	div.popup > div.info_how > ul li {float: left; width: 17.5%; color: #454545; font-size: 1em;font-weight: 200;text-align: center;line-height: 37px;}
+	/*20191119 letter-spacing 수정*/
+	div.popup > div.info_how > ul li {letter-spacing: -1px;}
+	div.popup > div.info_how > ul li .ddin {margin-top: 12px;font-size: 1em;padding-bottom: 5px;}
+	div.popup > div.info_how > ul li:first-child {margin-left: 0;}
+	div.popup > div.info_how > ul li img {display: block; width: 10vw; height: auto; margin: 0 auto;}
+	div.popup > div.info_how > ul li .info_how_txt {display: block; width: auto; height: 30px; line-height:30px; margin: 0 auto; font-size: 0.875em; font-weight:700;}
+
+	/* prod_info_table */
+	.prod_info_table {position:relative;max-width:1280px;margin:0 auto;padding:0 12px 0; box-sizing:border-box;zoom:1;}
+	.prod_info_table:after {content:"";display:block;clear:both;}
+
+	.prod_info_table .prod_info_table_list {float:none;width:100%;padding-top:10px;border-top:4px double #000;}
+	.prod_info_table .prod_info_table_list li {height:43px;line-height:19px;border-top:1px dashed #ccc;}
+	.prod_info_table .prod_info_table_list li:first-of-type {border:0;}
+	.prod_info_table .prod_info_table_list li > p {display:inline-block;padding:12px 0; font-size:0.875em; }
+
+	.prod_info_table .prod_info_table_list li .detail_tit { width:51.57%;/*width:232px;*/ margin-top: -3px; font-size:0.875em; color:#000;vertical-align:middle;}
+	.prod_info_table .prod_info_table_list li .detail_tit:before { content:"";display:inline-block;width:19px;height:19px;margin-right:10px;vertical-align:top;}
+	.prod_info_table .prod_info_table_list li .detail_tit.tea_plantation:before { background: url("../images/icon_terroir.png") no-repeat 50% 50%;background-size:100%;}
+	.prod_info_table .prod_info_table_list li .detail_tit.tea_pairing:before { background:url("../images/icon_pairing.png") no-repeat 50% 50%;background-size:100%;}
+	.prod_info_table .prod_info_table_list li .detail_tit.tea_blended:before { background:url("../images/icon_blended.png") no-repeat 50% 50%;background-size:100%;}
+	.prod_info_table .prod_info_table_list li .detail_tit.tea_tasting:before { background:url("../images/icon_info.png") no-repeat 50% 50%;background-size:100%;}
+
+	.prod_info_table .prod_info_table_list li .detail_txt {padding-left:5px;word-break:keep-all;}
+	.prod_info_table .prod_info_table_list li .detail_txt,.prod_info_table .prod_info_table_list li .detail_txt span {/*font-size:0.875em;*/color:#666;}
+	.prod_info_table .prod_info_table_list li .detail_txt span {position:relative;display:inline-block; padding:0 2px; }
+	.prod_info_table .prod_info_table_list li .detail_txt span:before {position:absolute;left:0;top:50%;margin-top:-5px;content:"";display:block;width:1px;height:10px;background:#e5e5e5;}
+	.prod_info_table .prod_info_table_list li .detail_txt span:first-of-type {padding-left:0;}
+	.prod_info_table .prod_info_table_list li .detail_txt span:first-of-type:before {display:none;}
+
+	.prod_info_table .info_map {float:left;width:0%;/*width:248px;*/display:block;padding-top:10px;text-align:right;border-top:4px double #000;}    
+	.prod_info_table .info_map .map_tit {height:43px;padding:12px 0;text-align:right;font-size:1.0625em;color:#000;font-weight:700;}
+	.prod_info_table .info_map .map_tit span {font-size:1.0625em;color:#000;font-weight:700;}
+	.prod_info_table .info_map .map_img {position:relative;min-height:129px;border-top:1px dashed #ccc;}
+	.prod_info_table .info_map .map_img .map_img_box {position:absolute;top:0;bottom:0;left:0;right:0;display:table;width:100%;height:100%;}
+	.prod_info_table .info_map .map_img .map_img_box .map_cell {display:table-cell;width:100%;height:100%;text-align:right;vertical-align:middle;}
+	.prod_info_table .info_map .map_img img {max-width:100%;}
+
+}
+
+/*--mobile(end)--*/
+
+
+/*+++++++++++++++*/
+/*--tablet(start)--*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+	section.sec_visual { overflow: hidden; position: relative; width: 100vw; height: 280px; margin-bottom: 100px; background: url("../images/bg_product_visual_T.png") no-repeat center 60%; background-size: cover;  }
+	section.sec_visual > div.visual_nm { position: absolute; left: 50%; top: 50%; z-index: 1; width: 100vw; opacity: 1; text-align: center; transform: translate(-51%, -37%); }
+	section.sec_visual > div.visual_nm > p { margin: 100px 0; font-size: 2.5em; font-weight: bold;  line-height: 1; color: #330000; }
+	
+	section.sec_product { position: relative; } 
+	section.sec_product > div.inner_wrap > ul { width: 100%; }
+	section.sec_product > div.inner_wrap > ul > li { float: left; width: 33.3333%; }
+	section.sec_product > div.inner_wrap > ul > li > button > img { display: block; width: 256px; height: auto; margin: 0 auto 30px auto; object-fit: cover; background-size: 100%; }
+	section.sec_product > div.inner_wrap > ul > li > button > p.title { margin-bottom: 10px; font-size: 1.25em; font-weight: bold; text-align: center; padding-right: 10.8474%; color: #234000;  }
+	section.sec_product > div.inner_wrap > ul > li > button > p.title_en { margin-bottom: 60px;  text-align: center; padding-right: 10.8474%; color: #606d43;  } 
+	
+	div.popup_bg { display: none; position: fixed; left: 0; top: 0; z-index: 110; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); }
+	div.popup { display: none; overflow-y: scroll; position: fixed; left: 50%; top: 50%; z-index: 111; width: 80%; height: 100%;  padding: 0; background: #fff; transform: translate(-50%, -50%); }
+	div.popup_bg.on { display: block;}
+	div.popup.on { display: block;}
+	div.popup_bg > button { float: right; padding: 15px 15px 0 0; }
+	div.popup > p { text-align: center; } 
+	div.popup > p.title { margin: 50px 0 40px 0; font-size: 2em; font-weight: bold; color: #111; text-transform: uppercase;  }
+	div.popup > p.title_sb { font-weight: bold; color: #111; margin-bottom: 15px; }
+	div.popup > p.title_ls { margin-bottom: 40px; padding: 0 50px; word-break: keep-all; font-size: 1.125em; line-height: 1.7; color: #535353; word-break: keep-all; }
+	div.popup > img { display: block; width: 375px; height: 415px; margin: 0 auto; margin-bottom: 40px; }
+
+	
+	
+	/*howto*/
+	 div.popup > div.info_how { overflow: hidden; max-width: 1280px; margin-top: 50px; margin-bottom: 65px; }
+	div.popup > div.info_how > p { overflow: hidden; float: left; width: 18.5%; padding-left: 12%; margin-top: 50px; color: #000000; font-size: 0.9375em; font-weight: 700; line-height: 37px;}
+	/*20191122 box-sizing 수정*/
+	div.popup > div.info_how > p {box-sizing:content-box;}
+	div.popup > div.info_how > ul {overflow: hidden; float: left; width: 135%; padding-left: 4%; }
+	div.popup > div.info_how > ul li {float: left; width: 17.42%; margin-left: 5px; color: #454545; font-size: 1.125em; font-weight: 200;text-align: center;line-height: 37px;}
+	/*20191119 letter-spacing 수정*/
+	div.popup > div.info_how > ul li {letter-spacing: -1px;}
+	div.popup > div.info_how > ul li .ddin {margin-top: 12px;font-size: 1.125em;padding-bottom: 5px;}
+	div.popup > div.info_how > ul li:first-child {margin-left: 0;}
+	div.popup > div.info_how > ul li img {display: block; width: auto; height: 60px; margin: 0 auto;}
+	div.popup > div.info_how > ul li .info_how_txt {display: block; width: auto; height: 30px; line-height:30px; margin: 0 auto; font-size: 1em; font-weight:700;}
+
+	/* prod_info_table */
+	.prod_info_table {position:relative;max-width:1280px;margin:0 auto;padding:0 51px 0;box-sizing:border-box;zoom:1;}
+	.prod_info_table:after {content:"";display:block;clear:both;}
+
+	.prod_info_table .prod_info_table_list {float:none;width:100%;padding-top:10px;border-top:4px double #000;}
+	.prod_info_table .prod_info_table_list li {height:43px;line-height:19px;border-top:1px dashed #ccc;}
+	.prod_info_table .prod_info_table_list li:first-of-type {border:0;}
+	.prod_info_table .prod_info_table_list li > p {display:inline-block;padding:12px 0;}
+
+	.prod_info_table .prod_info_table_list li .detail_tit {width:28.57%;/*width:232px;*/margin-bottom: 7px;  font-size:1.0625em;color:#000;vertical-align:middle;}
+	.prod_info_table .prod_info_table_list li .detail_tit:before {content:"";display:inline-block;width:19px;height:19px;margin-right:10px;vertical-align:top;}
+	.prod_info_table .prod_info_table_list li .detail_tit.tea_plantation:before {background: url("../images/icon_terroir.png") no-repeat 50% 50%;background-size:100%;}
+	.prod_info_table .prod_info_table_list li .detail_tit.tea_pairing:before {background:url("../images/icon_pairing.png") no-repeat 50% 50%;background-size:100%;}
+	.prod_info_table .prod_info_table_list li .detail_tit.tea_blended:before {background:url("../images/icon_blended.png") no-repeat 50% 50%;background-size:100%;}
+	.prod_info_table .prod_info_table_list li .detail_tit.tea_tasting:before {background:url("../images/icon_info.png") no-repeat 50% 50%;background-size:100%;}
+
+	.prod_info_table .prod_info_table_list li .detail_txt {padding-left:5px;word-break:keep-all;}
+	.prod_info_table .prod_info_table_list li .detail_txt,.prod_info_table .prod_info_table_list li .detail_txt span {font-size:1.0625em;color:#666;}
+	.prod_info_table .prod_info_table_list li .detail_txt span {position:relative;display:inline-block;padding:0 8px;}
+	.prod_info_table .prod_info_table_list li .detail_txt span:before {position:absolute;left:0;top:50%;margin-top:-5px;content:"";display:block;width:1px;height:10px;background:#e5e5e5;}
+	.prod_info_table .prod_info_table_list li .detail_txt span:first-of-type {padding-left:0;}
+	.prod_info_table .prod_info_table_list li .detail_txt span:first-of-type:before {display:none;}
+
+	.prod_info_table .info_map {float:left;width:0%;/*width:248px;*/display:block;padding-top:10px;text-align:right;border-top:4px double #000;}    
+	.prod_info_table .info_map .map_tit {height:43px;padding:12px 0;text-align:right;font-size:1.0625em;color:#000;font-weight:700;}
+	.prod_info_table .info_map .map_tit span {font-size:1.0625em;color:#000;font-weight:700;}
+	.prod_info_table .info_map .map_img {position:relative;min-height:129px;border-top:1px dashed #ccc;}
+	.prod_info_table .info_map .map_img .map_img_box {position:absolute;top:0;bottom:0;left:0;right:0;display:table;width:100%;height:100%;}
+	.prod_info_table .info_map .map_img .map_img_box .map_cell {display:table-cell;width:100%;height:100%;text-align:right;vertical-align:middle;}
+	.prod_info_table .info_map .map_img img {max-width:100%;}	
+}
+/*--tablet(end)--*/
+
+/*+++++++++++++++*/
+/*--desktop(start)--*/
+@media screen and (min-width: 1025px) {
+	
+	section.sec_visual { overflow: hidden; position: relative; width: 100vw; height: 390px; margin-bottom: 100px; background: url("../images/bg_product_visual_D.png") no-repeat center 60%; background-size: cover;  }
+	section.sec_visual > div.visual_nm { position: absolute; left: 50%; top: 50%; z-index: 1; width: 100vw; opacity: 1; transform: translate(-51%, -35%); }
+	section.sec_visual > div.visual_nm > p { margin: 100px 0; font-size: 2.5em; font-weight: bold;  text-align: center; line-height: 1; color: #330000; }
+	
+	section.sec_product { position: relative; } 
+	section.sec_product > div.inner_wrap > ul { width: 100%; }
+	section.sec_product > div.inner_wrap > ul > li { float: left; width: 25%; }
+	section.sec_product > div.inner_wrap > ul > li > button > img { display: block; width: 100%; height: auto; margin-bottom: 30px; object-fit: cover; background-size: 100%; }
+	section.sec_product > div.inner_wrap > ul > li > button > p.title { margin-bottom: 10px; font-size: 1.25em; font-weight: bold; text-align: center; padding-right: 10.8474%; color: #234000;  }
+	section.sec_product > div.inner_wrap > ul > li > button > p.title_en { margin-bottom: 60px;  text-align: center; padding-right: 10.8474%; color: #606d43;  } 
+	
+	div.popup_bg { display: none; position: fixed; left: 0; top: 0; z-index: 110; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); }
+	div.popup { display: none; overflow-y: scroll; position: fixed; left: 50%; top: 50%; z-index: 111; width: 60%; height: 100%;  padding: 0; background: #fff; transform: translate(-50%, -50%); }
+	div.popup_bg.on { display: block;}
+	div.popup.on { display: block;}
+	div.popup_bg > button { float: right; padding: 20px 20px 0 0; z-index: 10; }
+	div.popup > p { text-align: center; } 
+	div.popup > p.title { margin: 50px 0 40px 0;  font-size: 2em; font-weight: bold; color: #111; text-transform: uppercase; }
+	div.popup > p.title_sb { font-weight: bold; color: #111; margin-bottom: 15px; }
+	div.popup > p.title_ls { margin-bottom: 60px; padding: 0 15%; word-break: keep-all; font-size: 1.125em; line-height: 1.7; color: #535353; }	
+	div.popup > img { display: block; width: 330px; height: auto; margin: 0 auto; margin-bottom: 60px; }
+	
+	
+	/*howto*/
+	 div.popup > div.info_how { overflow: hidden; max-width: 1280px; margin-top: 50px; margin-bottom: 65px; }
+	div.popup > div.info_how > p { overflow: hidden; float: left; width: 18.5%; padding-left: 16%; margin-top: 50px; color: #000000; font-size: 1em; font-weight: 700; line-height: 37px;}
+	/*20191122 box-sizing 수정*/
+	div.popup > div.info_how > p {box-sizing:content-box;}
+	div.popup > div.info_how > ul {overflow: hidden; float: left; width: 65%;}
+	div.popup > div.info_how > ul li {float: left;width: 17.42%; margin-left: 5px; color: #454545; font-size: 1.125em;font-weight: 200;text-align: center;line-height: 37px;}
+	/*20191119 letter-spacing 수정*/
+	div.popup > div.info_how > ul li {letter-spacing: -1px;}
+	div.popup > div.info_how > ul li .ddin {margin-top: 12px;font-size: 1.125em;padding-bottom: 5px;}
+	div.popup > div.info_how > ul li:first-child {margin-left: 0;}
+	div.popup > div.info_how > ul li img {display: block; width: auto; height: 60px; margin: 0 auto;}
+	div.popup > div.info_how > ul li .info_how_txt {display: block; width: auto; height: 30px; line-height:30px; margin: 0 auto; font-size:1em; font-weight:700;}
+
+	/* prod_info_table */
+	.prod_info_table {position:relative;max-width:1280px;margin:0 auto;padding:0 110px 75px;box-sizing:border-box;zoom:1;}
+	.prod_info_table:after {content:"";display:block;clear:both;}
+
+	.prod_info_table .prod_info_table_list {float:left;width:76.61%;padding-top:10px;border-top:4px double #000;}
+	.prod_info_table .prod_info_table_list li {height:43px;line-height:19px;border-top:1px dashed #ccc;}
+	.prod_info_table .prod_info_table_list li:first-of-type {border:0;}
+	.prod_info_table .prod_info_table_list li > p {display:inline-block;padding:12px 0;}
+
+	.prod_info_table .prod_info_table_list li .detail_tit {width:45%;/*width:232px;*/ margin-bottom: 5px; font-size: 1.0625em;color:#000;vertical-align:middle;}
+	.prod_info_table .prod_info_table_list li .detail_tit:before {content:"";display:inline-block;width:19px;height:19px;margin-right:10px;vertical-align:top;}
+	.prod_info_table .prod_info_table_list li .detail_tit.tea_plantation:before {background: url("../images/icon_terroir.png") no-repeat 50% 50%;background-size:100%;}
+	.prod_info_table .prod_info_table_list li .detail_tit.tea_pairing:before {background:url("../images/icon_pairing.png") no-repeat 50% 50%;background-size:100%;}
+	.prod_info_table .prod_info_table_list li .detail_tit.tea_blended:before {background:url("../images/icon_blended.png") no-repeat 50% 50%;background-size:100%;}
+	.prod_info_table .prod_info_table_list li .detail_tit.tea_tasting:before {background:url("../images/icon_info.png") no-repeat 50% 50%;background-size:100%;}
+
+	.prod_info_table .prod_info_table_list li .detail_txt {padding-left:5px;word-break:keep-all;}
+	.prod_info_table .prod_info_table_list li .detail_txt,.prod_info_table .prod_info_table_list li .detail_txt span {font-size:1.0625em;color:#666;}
+	.prod_info_table .prod_info_table_list li .detail_txt span {position:relative;display:inline-block;padding:0 8px 0 0;}
+	.prod_info_table .prod_info_table_list li .detail_txt span:before {position:absolute;left:0;top:50%;margin-top:-5px;content:"";display:block;width:1px;height:10px;background:#e5e5e5;}
+	.prod_info_table .prod_info_table_list li .detail_txt span:first-of-type {padding-left:0;}
+	.prod_info_table .prod_info_table_list li .detail_txt span:first-of-type:before {display:none;}
+
+	.prod_info_table .info_map {float:left;width:23.39%;/*width:248px;*/display:block;padding-top:10px;text-align:right;border-top:4px double #000;}    
+	.prod_info_table .info_map .map_tit {height:43px;padding:12px 0;text-align:right;font-size:1.0625em;color:#000;font-weight:700;}
+	.prod_info_table .info_map .map_tit span {font-size:1.0625em;color:#000;font-weight:700;}
+	.prod_info_table .info_map .map_img {position:relative;min-height:129px;border-top:1px dashed #ccc;}
+	.prod_info_table .info_map .map_img .map_img_box {position:absolute;top:0;bottom:0;left:0;right:0;display:table;width:100%;height:100%;}
+	.prod_info_table .info_map .map_img .map_img_box .map_cell {display:table-cell;width:100%;height:100%;text-align:right;vertical-align:middle;}
+	.prod_info_table .info_map .map_img img {max-width:100%;}	
+
+}
+/*--desktop(end)--*/
